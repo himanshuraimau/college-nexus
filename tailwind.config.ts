@@ -1,5 +1,5 @@
-import type { Config } from "tailwindcss"
-const { fontFamily } = require("tailwindcss/defaultTheme")  // eslint-disable-line @typescript-eslint/no-var-requires
+import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme"); // eslint-disable-line @typescript-eslint/no-var-requires
 
 const config = {
   darkMode: ["class"],
@@ -8,7 +8,7 @@ const config = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   prefix: "",
   theme: {
     container: {
@@ -20,21 +20,23 @@ const config = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: ["Arsenal SC", ...fontFamily.sans],
       },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        background: {
+          DEFAULT: "#c4def3", // Light blue background
+        },
+        foreground: "#333333", // Dark gray text
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#216aa8", // Dark blue
+          foreground: "#ffffff", // White text for primary
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#1a476f", // Darker blue
+          foreground: "#ffffff", // White text for secondary
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -56,6 +58,12 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        btn: {
+          DEFAULT: "#216aa8", // Dark blue for buttons
+          hover: "#1a476f", // Darker blue on hover
+        },
+        nav: "#2e6eb6", // Different shade of blue for navbar
+        text: "#333333", // Dark gray text
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -79,6 +87,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} as Config;
 
-export default config
+export default config;

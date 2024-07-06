@@ -9,9 +9,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-nav text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className='text-white'>
+        <div className='text-white flex items-center justify-center'>
             Resources
         </div>
         </div>
