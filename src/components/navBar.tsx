@@ -12,7 +12,7 @@ const Navbar = () => {
     <nav className="bg-nav text-white p-4 " >
       <div className="pl-15 pr-15 container mx-auto flex items-center justify-between">
         
-          <div className="text-xl font-bold">Logo</div>
+          <div className="text-xl font-bold">CollegeNexus</div>
 
           <div className="flex justify-evenly space-x-4">
             <div>Resources</div>
