@@ -2,8 +2,9 @@
     "subjects":[
         {
             "year": 2023,
-            "subject": "Mathematics-I",
-            "branch": "CIVIL",
+            "semester": 1,
+            "subject": "Mathematics-I for Civil Engineering Stream",
+            "branch": "Civil",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -30,6 +31,7 @@
         },
         {
             "year": 2023,
+            "semester": 2,
             "subject": "Mathematics-II",
             "branch": "Civil",
             "resources": {
@@ -58,6 +60,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Mathematics-I",
             "branch": "CSE",
             "resources": {
@@ -86,6 +89,7 @@
         },
         {
             "year": 2023,
+            "semester": 2,
             "subject": "Mathematics-II",
             "branch": "CSE",
             "resources": {
@@ -114,6 +118,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Mathematics-I",
             "branch": "MECH",
             "resources": {
@@ -142,6 +147,7 @@
         },
         {
             "year": 2023,
+            "semester": 2,
             "subject": "Mathematics-II",
             "branch": "MECH",
             "resources": {
@@ -170,6 +176,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Mathematics-I",
             "branch": "EEE && ECE",
             "resources": {
@@ -198,6 +205,7 @@
         },
         {
             "year": 2023,
+            "semester": 2,
             "subject": "Mathematics-II",
             "branch": "EEE && ECE",
             "resources": {
@@ -226,6 +234,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Physics",
             "branch": "Civil",
             "resources": {
@@ -254,6 +263,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Physics",
             "branch": "CSE",
             "resources": {
@@ -282,6 +292,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Physics",
             "branch": "",
             "resources": {
@@ -310,6 +321,7 @@
         },
         {
             "year": 2023,
+            "semester": 2,
             "subject": "Physics",
             "branch": "EEE && ECE",
             "resources": {
@@ -338,6 +350,7 @@
         },
         {
             "year": 2023,
+            "semester": 2,
             "subject": "Chemistry",
             "branch": "CIVIL",
             "resources": {
@@ -366,6 +379,7 @@
         },
         {
             "year": 2023,
+            "semester": 2,
             "subject": "Chemistry",
             "branch": "CSE",
             "resources": {
@@ -394,6 +408,7 @@
         },
         {
             "year": 2023,
+            "semester": 2,
             "subject": "Chemistry",
             "branch": "MECH",
             "resources": {
@@ -422,6 +437,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Chemistry",
             "branch": "EEE && ECE",
             "resources": {
@@ -450,6 +466,7 @@
         },
         {
             "year": 2023,
+            "semester": "ALL",
             "subject": "CAED",
             "branch": "ALL",
             "resources": {
@@ -478,8 +495,9 @@
         },
         {
             "year": 2023,
-            "subject": "Engineering Mechanics",
-            "branch": "CIVIL",
+            "semester": 1,
+            "subject": "Engineering Mechanics (For CV)",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -506,8 +524,9 @@
         },
         {
             "year": 2023,
-            "subject": "Elements of Electrical Engineering",
-            "branch": "EE",
+            "semester": 1,
+            "subject": "Elements of Electrical Engineering (For EE)",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -534,6 +553,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Basic Electronics (For EC, EI, ET)",
             "branch": "",
             "resources": {
@@ -562,6 +582,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Elements of Mechanical Engineering (For ME, IM, CH)",
             "branch": "",
             "resources": {
@@ -590,6 +611,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Principles of Programming Using C (For CS, IS, AD, CI, BT)",
             "branch": "",
             "resources": {
@@ -618,6 +640,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to Civil Engineering (Except CV)",
             "branch": "",
             "resources": {
@@ -646,6 +669,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to Electrical Engineering (Except EE)",
             "branch": "",
             "resources": {
@@ -674,6 +698,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to Electronics Engineering (Except EC, EI, ET)",
             "branch": "",
             "resources": {
@@ -702,6 +727,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to Mechanical Engineering (Except ME, IM, CH)",
             "branch": "",
             "resources": {
@@ -730,6 +756,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to C Programming (Except CS, IS, AD, CI, BT)",
             "branch": "",
             "resources": {
@@ -758,6 +785,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to Web Programming",
             "branch": "",
             "resources": {
@@ -786,6 +814,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to Python Programming",
             "branch": "",
             "resources": {
@@ -814,6 +843,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Basics to JAVA Programming",
             "branch": "",
             "resources": {
@@ -842,6 +872,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to C++ Programming",
             "branch": "",
             "resources": {
@@ -870,6 +901,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Smart Materials and Systems",
             "branch": "",
             "resources": {
@@ -898,6 +930,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Green Buildings",
             "branch": "",
             "resources": {
@@ -926,6 +959,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Operation and Maintenance of Solar Electric Systems",
             "branch": "",
             "resources": {
@@ -954,6 +988,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to Embedded System",
             "branch": "",
             "resources": {
@@ -982,6 +1017,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to Nanotechnology",
             "branch": "",
             "resources": {
@@ -1010,6 +1046,7 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to Sustainable Engineering",
             "branch": "",
             "resources": {
@@ -1038,8 +1075,9 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Renewable Energy Sources",
-            "branch": "ALL",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -1066,8 +1104,9 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to Internet of Things (IoT)",
-            "branch": "ALL",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -1094,8 +1133,9 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Introduction to Cyber Security",
-            "branch": "ALL",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -1122,8 +1162,9 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Communicative English",
-            "branch": "ALL",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -1150,8 +1191,9 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Professional Writing Skills in English",
-            "branch": "ALL",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -1178,8 +1220,9 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Balake Kannada",
-            "branch": "ALL",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -1206,8 +1249,9 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Samkruthika Kannada",
-            "branch": "ALL",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -1234,8 +1278,9 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Indian Constitution",
-            "branch": "ALL",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -1262,8 +1307,9 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Innovation and Design Thinking",
-            "branch": "ALL",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
@@ -1290,8 +1336,9 @@
         },
         {
             "year": 2023,
+            "semester": 1,
             "subject": "Scientific Foundations of Health",
-            "branch": "ALL",
+            "branch": "",
             "resources": {
                 "notes": {
                     "module1": "link_to_module1_notes",
