@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
+import Navbar from "@/components/navBar";
 
 
 export const metadata: Metadata = {
@@ -22,13 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en">  
        <body
         className={cn(
           "min-h-screen bg-gray-200 font-sans antialiased",
           fontSans.variable
         )}
-      >
+      > <Navbar/>
         {children}
         <Analytics/>
         <SpeedInsights/>

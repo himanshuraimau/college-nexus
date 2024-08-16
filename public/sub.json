@@ -1,0 +1,1320 @@
+{
+    "subjects":[
+        {
+            "year": 2023,
+            "subject": "Mathematics-I",
+            "branch": "CIVIL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Mathematics-II",
+            "branch": "Civil",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Mathematics-I",
+            "branch": "CSE",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Mathematics-II",
+            "branch": "CSE",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Mathematics-I",
+            "branch": "MECH",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Mathematics-II",
+            "branch": "MECH",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Mathematics-I",
+            "branch": "EEE && ECE",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Mathematics-II",
+            "branch": "EEE && ECE",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Physics",
+            "branch": "Civil",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Physics",
+            "branch": "CSE",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Physics",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Physics",
+            "branch": "EEE && ECE",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Chemistry",
+            "branch": "CIVIL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Chemistry",
+            "branch": "CSE",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Chemistry",
+            "branch": "MECH",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Chemistry",
+            "branch": "EEE && ECE",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "CAED",
+            "branch": "ALL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Engineering Mechanics",
+            "branch": "CIVIL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Elements of Electrical Engineering",
+            "branch": "EE",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Basic Electronics (For EC, EI, ET)",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Elements of Mechanical Engineering (For ME, IM, CH)",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Principles of Programming Using C (For CS, IS, AD, CI, BT)",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to Civil Engineering (Except CV)",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to Electrical Engineering (Except EE)",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to Electronics Engineering (Except EC, EI, ET)",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to Mechanical Engineering (Except ME, IM, CH)",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to C Programming (Except CS, IS, AD, CI, BT)",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to Web Programming",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to Python Programming",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Basics to JAVA Programming",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to C++ Programming",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Smart Materials and Systems",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Green Buildings",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Operation and Maintenance of Solar Electric Systems",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to Embedded System",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to Nanotechnology",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to Sustainable Engineering",
+            "branch": "",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Renewable Energy Sources",
+            "branch": "ALL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to Internet of Things (IoT)",
+            "branch": "ALL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Introduction to Cyber Security",
+            "branch": "ALL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Communicative English",
+            "branch": "ALL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Professional Writing Skills in English",
+            "branch": "ALL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Balake Kannada",
+            "branch": "ALL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Samkruthika Kannada",
+            "branch": "ALL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Indian Constitution",
+            "branch": "ALL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Innovation and Design Thinking",
+            "branch": "ALL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        },
+        {
+            "year": 2023,
+            "subject": "Scientific Foundations of Health",
+            "branch": "ALL",
+            "resources": {
+                "notes": {
+                    "module1": "link_to_module1_notes",
+                    "module2": "link_to_module2_notes",
+                    "module3": "link_to_module3_notes",
+                    "module4": "link_to_module4_notes",
+                    "module5": "link_to_module5_notes"
+                },
+                "question_bank": {
+                    "module1": "link_to_module1_question_bank",
+                    "module2": "link_to_module2_question_bank",
+                    "module3": "link_to_module3_question_bank",
+                    "module4": "link_to_module4_question_bank",
+                    "module5": "link_to_module5_question_bank"
+                },
+                "pyqs": {
+                    "internals": {
+                        "1st_internal": "link_to_1st_internal_pyq",
+                        "2nd_internal": "link_to_2nd_internal_pyq"
+                    },
+                    "final_exam": "link_to_final_exam_pyq"
+                }
+            }
+        }
+]
+}
