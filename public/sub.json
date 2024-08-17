@@ -1,7 +1,7 @@
 {
     "subjects":[
         {
-            "year": 2023,
+            "year": 1,
             "semester": 1,
             "subject": "Mathematics-I for Civil Engineering Stream",
             "branch": "Civil",
@@ -30,7 +30,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 2,
             "subject": "Mathematics-II",
             "branch": "Civil",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 1,
             "subject": "Mathematics-I",
             "branch": "CSE",
@@ -88,7 +88,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 2,
             "subject": "Mathematics-II",
             "branch": "CSE",
@@ -117,7 +117,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 1,
             "subject": "Mathematics-I",
             "branch": "MECH",
@@ -146,7 +146,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 2,
             "subject": "Mathematics-II",
             "branch": "MECH",
@@ -175,7 +175,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 1,
             "subject": "Mathematics-I",
             "branch": "EEE && ECE",
@@ -204,7 +204,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 2,
             "subject": "Mathematics-II",
             "branch": "EEE && ECE",
@@ -233,7 +233,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 1,
             "subject": "Physics",
             "branch": "Civil",
@@ -262,7 +262,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 1,
             "subject": "Physics",
             "branch": "CSE",
@@ -291,7 +291,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 1,
             "subject": "Physics",
             "branch": "",
@@ -320,7 +320,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 2,
             "subject": "Physics",
             "branch": "EEE && ECE",
@@ -349,7 +349,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 2,
             "subject": "Chemistry",
             "branch": "CIVIL",
@@ -378,7 +378,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 2,
             "subject": "Chemistry",
             "branch": "CSE",
@@ -407,7 +407,7 @@
             }
         },
         {
-            "year": 2023,
+            "year": 1,
             "semester": 2,
             "subject": "Chemistry",
             "branch": "MECH",
