@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 const Navbar = () => {
@@ -12,13 +13,12 @@ const Navbar = () => {
     <nav className="bg-nav text-white shadow-lg">
       <div className="container mx-auto flex items-center justify-between p-5">
         <div className="text-2xl font-extrabold tracking-wide cursor-pointer">
-          College<span className="text-primary">Nexus</span>
+                <Link href="/">CollegeNexus</Link>
         </div>
-        
         <div className="hidden md:flex space-x-8 text-lg font-medium">
-          <a href="#" className="hover:text-primary transition duration-300">Resources</a>
-          <a href="#" className="hover:text-primary transition duration-300">News</a>
-          <a href="#" className="hover:text-primary transition duration-300">Network</a>
+          <Link href="/resources" className="hover:text-primary transition duration-300">Resources</Link>
+          <Link href="/news" className="hover:text-primary transition duration-300">News</Link>
+          <Link href="/network" className="hover:text-primary transition duration-300">Network</Link>
         </div>
 
         <div className="md:hidden">
@@ -42,9 +42,9 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-white text-nav">
           <div className="flex flex-col p-4 space-y-2">
-            <a href="#" className="block py-2 px-4 hover:bg-gray-200 rounded">Resources</a>
-            <a href="#" className="block py-2 px-4 hover:bg-gray-200 rounded">News</a>
-            <a href="#" className="block py-2 px-4 hover:bg-gray-200 rounded">Network</a>
+            <Link href="/resources" className="block py-2 px-4 hover:bg-gray-200 rounded">Resources</Link>
+            <Link href="/news" className="block py-2 px-4 hover:bg-gray-200 rounded">News</Link>
+            <Link href="/network" className="block py-2 px-4 hover:bg-gray-200 rounded">Network</Link>
           </div>
         </div>
       )}
