@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
-import { cn } from "@/lib/utils";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import Navbar from "@/components/navBar";
@@ -24,12 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">  
-       <body
-        className={cn(
-          "min-h-screen bg-gray-200 font-sans antialiased",
-          fontSans.variable
-        )}
-      > <Navbar/>
+       <body> 
+        <Navbar/>
         {children}
         <Analytics/>
         <SpeedInsights/>
