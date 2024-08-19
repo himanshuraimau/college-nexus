@@ -1,9 +1,9 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import SubjectCard from './SubjectCard';
 import { Card, CardDescription, CardTitle } from './ui/card-hover-effect';
-
 
 interface Resource {
     notes: Record<string, string>;
@@ -25,13 +25,25 @@ interface Subject {
 const FilteredSubjects: React.FC<{ subjects: Subject[] }> = ({ subjects }) => {
     const [selectedSubject, setSelectedSubject] = useState<Subject | null>(null);
     const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+    const router = useRouter(); // Use the router to navigate
 
     const handleSubjectClick = (subject: Subject) => {
         setSelectedSubject(subject);
     };
 
+    const handleBackToResources = () => {
+        router.push('/resources'); 
+    };
+
     return (
         <div>
+            <button 
+                className="mb-4 px-4 py-2 bg-indigo-500 text-white rounded-full shadow hover:bg-gray-300 transition-transform transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-gray-400"
+                onClick={handleBackToResources}
+            >
+                Back to Resources
+            </button>
+
             {selectedSubject ? (
                 <SubjectCard subject={selectedSubject} onBack={() => setSelectedSubject(null)} />
             ) : (

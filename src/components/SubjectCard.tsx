@@ -25,7 +25,7 @@ const SubjectCard: React.FC<{ subject: Subject; onBack: () => void }> = ({ subje
             <div className="flex items-center justify-between mb-8">
                 <button
                     onClick={onBack}
-                    className="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1"
+                    className="bg-indigo-500/80 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1"
                 >
                     ← Back
                 </button>
