@@ -19,58 +19,73 @@ interface Subject {
     resources: Resource;
 }
 
-const SubjectCard: React.FC<{ subject: Subject }> = ({ subject }) => {
+const SubjectCard: React.FC<{ subject: Subject; onBack: () => void }> = ({ subject, onBack }) => {
     return (
-        <div className="p-6 bg-white shadow-md rounded-lg">
-            <h2 className="text-2xl font-bold mb-4">{subject.subject}</h2>
-            <p className="text-gray-700 mb-2">Year: {subject.year}</p>
-            <p className="text-gray-700 mb-2">Branch: {subject.branch}</p>
-            <p className="text-gray-700 mb-2">Semester: {subject.semester}</p>
-
-            <div className="mt-4">
-                <h3 className="font-semibold text-lg mb-2">Resources:</h3>
-                
-                {/* Displaying notes */}
-                <div className="mb-4">
-                    <h4 className="font-semibold">Notes:</h4>
-                    {Object.entries(subject.resources.notes).map(([module, link]) => (
-                        <p key={module} className="text-blue-500 hover:underline">
-                            <a href={link} target="_blank" rel="noopener noreferrer">{module}</a>
-                        </p>
-                    ))}
+        <div className="p-8 bg-gradient-to-br from-indigo-100 to-purple-100 shadow-xl rounded-2xl">
+            <div className="flex items-center justify-between mb-8">
+                <button
+                    onClick={onBack}
+                    className="bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:-translate-y-1"
+                >
+                    ← Back
+                </button>
+                <h1 className="text-4xl font-bold text-indigo-800 text-center flex-grow">{subject.subject}</h1>
+                <div className="w-24"></div> {/* This empty div balances the layout */}
+            </div>
+            
+            <div className="flex justify-center space-x-8 mb-8 text-lg">
+                <div className="bg-white px-6 py-3 rounded-full shadow-md">
+                    <span className="font-semibold text-indigo-600">Year:</span> {subject.year}
                 </div>
-
-                {/* Displaying question bank */}
-                <div className="mb-4">
-                    <h4 className="font-semibold">Question Bank:</h4>
-                    {Object.entries(subject.resources.question_bank).map(([module, link]) => (
-                        <p key={module} className="text-blue-500 hover:underline">
-                            <a href={link} target="_blank" rel="noopener noreferrer">{module}</a>
-                        </p>
-                    ))}
+                <div className="bg-white px-6 py-3 rounded-full shadow-md">
+                    <span className="font-semibold text-indigo-600">Semester:</span> {subject.semester}
                 </div>
+                <div className="bg-white px-6 py-3 rounded-full shadow-md">
+                    <span className="font-semibold text-indigo-600">Branch:</span> {subject.branch}
+                </div>
+            </div>
 
-                {/* Displaying PYQs */}
-                <div className="mb-4">
-                    <h4 className="font-semibold">Previous Year Questions (PYQs):</h4>
-                    <div>
-                        <h5 className="font-semibold">Internals:</h5>
-                        {Object.entries(subject.resources.pyqs.internals).map(([internal, link]) => (
-                            <p key={internal} className="text-blue-500 hover:underline">
-                                <a href={link} target="_blank" rel="noopener noreferrer">{internal}</a>
-                            </p>
-                        ))}
-                    </div>
-                    <div>
-                        <h5 className="font-semibold">Final Exam:</h5>
-                        <p className="text-blue-500 hover:underline">
-                            <a href={subject.resources.pyqs.final_exam} target="_blank" rel="noopener noreferrer">Final Exam PYQ</a>
-                        </p>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <ResourceSection title="Notes" items={subject.resources.notes} />
+                <ResourceSection title="Question Bank" items={subject.resources.question_bank} />
+                <div>
+                    <h3 className="text-2xl font-semibold mb-4 text-indigo-800">Previous Year Questions (PYQs)</h3>
+                    <ResourceSection title="Internals" items={subject.resources.pyqs.internals} />
+                    <div className="mt-4">
+                        <h4 className="text-xl font-semibold mb-2 text-indigo-700">Final Exam</h4>
+                        <a 
+                            href={subject.resources.pyqs.final_exam} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-indigo-600 hover:text-indigo-800 hover:underline transition duration-300"
+                        >
+                            Final Exam PYQ
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     );
 };
+
+const ResourceSection: React.FC<{ title: string; items: Record<string, string> }> = ({ title, items }) => (
+    <div>
+        <h3 className="text-2xl font-semibold mb-4 text-indigo-800">{title}</h3>
+        <ul className="space-y-2">
+            {Object.entries(items).map(([module, link]) => (
+                <li key={module}>
+                    <a 
+                        href={link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-indigo-600 hover:text-indigo-800 hover:underline transition duration-300"
+                    >
+                        {module}
+                    </a>
+                </li>
+            ))}
+        </ul>
+    </div>
+);
 
 export default SubjectCard;

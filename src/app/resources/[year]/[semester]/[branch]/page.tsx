@@ -1,5 +1,6 @@
+import FilteredSubjects from '@/components/FilteredSubjects';
 import { fetchSubjects } from '@/utils/fetchSubjects';
-import SubjectCard from '@/components/SubjectCard';
+
 
 interface Resource {
     notes: Record<string, string>;
@@ -36,17 +37,9 @@ const SubjectPage = async ({ params }: { params: { year: string, semester: strin
 
     return (
         <div className="min-h-screen bg-gray-100">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <h1 className="text-4xl font-bold text-center mb-8">Filtered Resources</h1>
-                <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {filteredSubjects.length > 0 ? (
-                        filteredSubjects.map((subject: Subject, idx: number) => (
-                            <SubjectCard key={idx} subject={subject} />
-                        ))
-                    ) : (
-                        <p className="text-center text-gray-700 col-span-full">No resources found for the selected criteria.</p>
-                    )}
-                </div>
+                <FilteredSubjects subjects={filteredSubjects} />
             </div>
         </div>
     );
