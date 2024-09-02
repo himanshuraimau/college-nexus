@@ -27,11 +27,11 @@ const Navbar = () => {
             onClick={toggleMenu}
           >
             {isOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-6 h-6 transition transform rotate-45" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
               </svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <svg className="w-6 h-6 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
               </svg>
             )}
@@ -40,11 +40,11 @@ const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden bg-white text-indigo-500">
+        <div className="md:hidden bg-indigo-500 text-white transition-transform transform">
           <div className="flex flex-col p-4 space-y-2">
-            <Link href="/resources" className="block py-2 px-4 hover:bg-indigo-100 rounded">Resources</Link>
-            <Link href="/news" className="block py-2 px-4 hover:bg-indigo-100 rounded">News</Link>
-            <Link href="/network" className="block py-2 px-4 hover:bg-indigo-100 rounded">Network</Link>
+            <Link href="/resources" className="block py-2 px-4 hover:bg-indigo-600 rounded transition duration-300">Resources</Link>
+            <Link href="/news" className="block py-2 px-4 hover:bg-indigo-600 rounded transition duration-300">News</Link>
+            <Link href="/network" className="block py-2 px-4 hover:bg-indigo-600 rounded transition duration-300">Network</Link>
           </div>
         </div>
       )}
