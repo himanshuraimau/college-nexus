@@ -13,7 +13,7 @@ import {
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false)
 
-  const navItems = ["Resources", "News", "Network"]
+  const navItems = ["Workshop","Resources", "News", "Network"]
 
   return (
     <nav className="bg-gradient-to-r from-amber-100 to-orange-200 text-amber-900 border-b border-amber-100 sticky top-0 z-50">
