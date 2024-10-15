@@ -1,11 +1,10 @@
-import UserRegistrationForm from '@/components/user-registration'
 import React from 'react'
 
 const Page = () => {
   return (
     <div>
 
-      <UserRegistrationForm/>
+     HELLO WORKSHOP
     </div>
   )
 }
