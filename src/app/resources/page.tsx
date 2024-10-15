@@ -2,7 +2,7 @@
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import SelectForm from '../../components/SelectForm';
-import { fetchSubjects } from '../../utils/fetchSubjects';
+import { fetchSubjects } from '../../lib/fetchSubjects';
 
 interface Subject {
     year: number;
@@ -37,10 +37,12 @@ const ResourcePage: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gray-200">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-                <h1 className="text-4xl font-bold text-center mb-8">Find Your Resources</h1>
-                <SelectForm onSubmit={handleFormSubmit} />
+        <div className="min-h-screen bg-gradient-to-br from-amber-50 via-amber-100 to-orange-200">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                <h1 className="text-4xl font-bold text-center mb-8 text-amber-900">Find Your Resources</h1>
+                <div className="rounded-lg shadow-md p-6">
+                    <SelectForm onSubmit={handleFormSubmit} />
+                </div>
             </div>
         </div>
     );

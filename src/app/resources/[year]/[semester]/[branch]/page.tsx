@@ -1,5 +1,5 @@
 import FilteredSubjects from '@/components/FilteredSubjects';
-import { fetchSubjects } from '@/utils/fetchSubjects';
+import { fetchSubjects } from '@/lib/fetchSubjects';
 
 
 interface Resource {
@@ -36,7 +36,7 @@ const SubjectPage = async ({ params }: { params: { year: string, semester: strin
     const filteredSubjects = await getSubjects(year, semester, branch);
 
     return (
-        <div className="min-h-screen bg-gray-100">
+        <div className="min-h-screen ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                 <h1 className="text-4xl font-bold text-center mb-8">Filtered Resources</h1>
                 <FilteredSubjects subjects={filteredSubjects} />
