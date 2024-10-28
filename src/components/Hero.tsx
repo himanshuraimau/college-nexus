@@ -35,6 +35,13 @@ const HeroSection = () => {
             Access a wealth of resources, stay updated with the latest news, and build your network with us.
           </p>
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6">
+          <Button
+              size="lg"
+              className="bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 rounded-full"
+              onClick={() => router.push("/workshop")}
+            >
+              Workshop
+            </Button>
             <Button
               size="lg"
               className="bg-gradient-to-r from-amber-500 to-orange-500 text-white hover:from-amber-600 hover:to-orange-600 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 rounded-full"
@@ -54,9 +61,9 @@ const HeroSection = () => {
               size="lg"
               variant="ghost"
               className="text-amber-600 hover:bg-amber-100 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-1 rounded-full"
-              onClick={() => router.push("/network")}
+              onClick={() => router.push("/team")}
             >
-              Network
+              Team
             </Button>
           </div>
         </motion.div>
