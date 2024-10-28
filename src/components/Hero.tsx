@@ -10,7 +10,7 @@ const HeroSection = () => {
   const router = useRouter()
 
   return (
-    <div className="min-h-[calc(100vh-4rem)] bg-gradient-to-br from-amber-50 via-amber-100 to-orange-200 flex items-center justify-center overflow-hidden">
+    <div className="min-h-[calc(100vh-4rem)] bg-gradient-to-br  flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-[url('/pattern.svg')] opacity-5"></div>
       <div className="container mx-auto px-4 relative z-10">
         <motion.div 
