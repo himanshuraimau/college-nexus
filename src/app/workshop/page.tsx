@@ -1,7 +1,7 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { Leaf, Sparkles, Calendar, MapPin, Github, Code, FileJson, Server, Database, Boxes, GitBranch, Globe, Bot, Cpu, Braces } from "lucide-react"
+import { Leaf, Sparkles,Shell, Calendar, MapPin, Github, Code, FileJson, Server, Database, Boxes, GitBranch, Globe, Bot, Cpu, Braces } from "lucide-react"
 import { motion } from "framer-motion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
@@ -14,6 +14,7 @@ const WorkshopSection = () => {
     { topic: "JavaScript Basics", icon: Braces },
     { topic: "Advanced JavaScript", icon: FileJson },
     { topic: "JavaScript Projects & Advanced Concepts", icon: Boxes },
+    {topic:"Linux and Dual Booting", icon: Shell},
     { topic: "Competitive Programming & DSA", icon: Cpu },
     { topic: "Node.js", icon: Server },
     { topic: "HTTP & Server Fundamentals", icon: Globe },

@@ -1,7 +1,7 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { Leaf, Sun, Cloud, Wind, Sunrise } from "lucide-react"
+import { Leaf, Sun, Cloud, Wind, Sunrise, Newspaper, Users } from "lucide-react"
 import { motion } from "framer-motion"
 
 import { Button } from "@/components/ui/button"
@@ -50,40 +50,47 @@ const NatureHeroSection = () => {
           <p className="text-lg md:text-xl text-green-800 mb-12 max-w-xl leading-relaxed">
             Access a wealth of resources, stay updated with the latest news, and build your network with us.
           </p>
-          <div className="grid grid-cols-2 gap-4 md:flex md:space-x-4">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-green-500 to-green-600 text-white hover:from-green-600 hover:to-green-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 rounded-full px-6 py-3 text-lg font-semibold flex items-center space-x-2 group"
-              onClick={() => router.push("/workshop")}
-            >
-              <Leaf className="w-5 h-5 group-hover:animate-wiggle" />
-              <span>Workshop</span>
-            </Button>
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-500 to-blue-600 text-white hover:from-blue-600 hover:to-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 rounded-full px-6 py-3 text-lg font-semibold flex items-center space-x-2 group"
-              onClick={() => router.push("/resources")}
-            >
-              <Cloud className="w-5 h-5 group-hover:animate-bounce" />
-              <span>Resources</span>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-green-600 text-green-700 hover:bg-green-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 rounded-full px-6 py-3 text-lg font-semibold"
-              onClick={() => router.push("/news")}
-            >
-              News
-            </Button>
-            <Button
-              size="lg"
-              variant="ghost"
-              className="text-blue-700 hover:bg-blue-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 rounded-full px-6 py-3 text-lg font-semibold flex items-center space-x-2 group"
-              onClick={() => router.push("/team")}
-            >
-              <Sun className="w-5 h-5 group-hover:animate-spin-slow" />
-              <span>Team</span>
-            </Button>
+          <div className="flex flex-wrap justify-center gap-4 w-3/5 md:w-auto">
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-green-400 to-blue-500 text-white hover:from-green-500 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl rounded-full px-8 py-4 text-lg font-semibold flex items-center space-x-3"
+                onClick={() => router.push("/workshop")}
+              >
+                <Leaf className="w-5 h-5" />
+                <span>Workshop</span>
+              </Button>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-400 to-green-500 text-white hover:from-blue-500 hover:to-green-600 transition-all duration-300 shadow-lg hover:shadow-xl rounded-full px-8 py-4 text-lg font-semibold flex items-center space-x-3"
+                onClick={() => router.push("/resources")}
+              >
+                <Cloud className="w-5 h-5" />
+                <span>Resources</span>
+              </Button>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-purple-400 to-pink-500 text-white hover:from-purple-500 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-xl rounded-full px-8 py-4 text-lg font-semibold flex items-center space-x-3"
+                onClick={() => router.push("/news")}
+              >
+                <Newspaper className="w-5 h-5" />
+                <span>News</span>
+              </Button>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl rounded-full px-8 py-4 text-lg font-semibold flex items-center space-x-3"
+                onClick={() => router.push("/team")}
+              >
+                <Users className="w-5 h-5" />
+                <span>Team</span>
+              </Button>
+            </motion.div>
           </div>
         </motion.div>
       </div>
