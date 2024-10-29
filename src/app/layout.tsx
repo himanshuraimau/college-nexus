@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">  
-       <body className="bg-gradient-to-br from-amber-50 via-amber-100 to-orange-200"> 
+       <body className="bg-gradient-to-b from-green-100 to-transparent"> 
         <Navbar/>
         {children}
         <Analytics/>

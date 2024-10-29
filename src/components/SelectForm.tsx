@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import { Leaf, ChevronDown } from 'lucide-react';
 
 interface FormData {
     year: string;
@@ -36,13 +37,16 @@ const SelectForm: React.FC<SelectFormProps> = ({ onSubmit }) => {
 
     return (
         <div className="flex items-center justify-center w-full max-w-md mx-auto">
-            <form onSubmit={handleSubmit} className="flex flex-col  p-8 shadow-xl w-full space-y-6 rounded-2xl">
-                <h2 className="text-3xl font-bold mb-6 text-center text-amber-700">Select Your Resources</h2>
+            <form onSubmit={handleSubmit} className="flex flex-col p-8 shadow-xl w-full space-y-6 rounded-2xl bg-white/80 backdrop-blur-sm">
+                <h2 className="text-3xl font-bold mb-6 text-center text-green-700 flex items-center justify-center">
+                    <Leaf className="w-8 h-8 mr-2 text-green-600" />
+                    Select Your Resources
+                </h2>
                 
                 {['year', 'branch', 'semester'].map((field) => (
                     <div key={field} className="relative">
                         <select
-                            className="appearance-none w-full p-4 border border-amber-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500 bg-amber-50 transition-all duration-200 hover:bg-amber-100 text-amber-900"
+                            className="appearance-none w-full p-4 border border-green-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 bg-green-50 transition-all duration-200 hover:bg-green-100 text-green-900"
                             value={field === 'year' ? year : field === 'branch' ? branch : semester}
                             onChange={(e) => {
                                 if (field === 'year') setYear(e.target.value);
@@ -62,10 +66,8 @@ const SelectForm: React.FC<SelectFormProps> = ({ onSubmit }) => {
                                 <option key={sem} value={sem}>{sem}</option>
                             ))}
                         </select>
-                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-amber-700">
-                            <svg className="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-                            </svg>
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-green-700">
+                            <ChevronDown className="h-4 w-4" />
                         </div>
                     </div>
                 ))}
@@ -73,7 +75,7 @@ const SelectForm: React.FC<SelectFormProps> = ({ onSubmit }) => {
                 <div className='flex justify-center items-center'>
                     <button
                         type="submit"
-                        className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-amber-500 to-orange-500 rounded-full shadow-lg hover:from-amber-600 hover:to-orange-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-amber-300"
+                        className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-green-500 to-blue-500 rounded-full shadow-lg hover:from-green-600 hover:to-blue-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-green-300"
                     >
                         Submit
                     </button>
@@ -90,13 +92,13 @@ const SelectForm: React.FC<SelectFormProps> = ({ onSubmit }) => {
                 }
                 select option {
                     background-color: white;
-                    color: #78350f;
+                    color: #065f46;
                     padding: 10px;
                 }
                 select option:hover,
                 select option:focus,
                 select option:active {
-                    background-color: #fef3c7;
+                    background-color: #d1fae5;
                 }
                 @media screen and (-webkit-min-device-pixel-ratio:0) {
                     select {
