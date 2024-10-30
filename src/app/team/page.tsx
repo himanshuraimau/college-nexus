@@ -2,12 +2,15 @@
 
 import Image from "next/image"
 import { Github, Linkedin, Twitter, Globe } from "lucide-react"
+import { Card } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
 import { motion } from "framer-motion"
 import { teamMembers } from "./team_members"
 
 export default function Team() {
   return (
-    <div className="min-h-screen pt-8 relative overflow-hidden">
+    <div className="min-h-screen py-24 relative overflow-hidden">
+      {/* Background elements matching workshop page */}
       <div className="absolute inset-0 bg-[url('/leaves.svg')] opacity-5"></div>
       <div className="absolute top-20 left-10 w-64 h-64 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
       <div className="absolute top-40 right-10 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
@@ -27,71 +30,69 @@ export default function Team() {
           </span>
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1 }}
             >
-              <div className="group relative bg-white shadow-lg rounded-2xl overflow-hidden transform transition-all duration-300 hover:shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-green-100 to-blue-100 opacity-50"></div>
+              <Card className="group relative bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300 overflow-hidden rounded-xl">
+                {/* Gradient overlay */}
+                <div className="absolute inset-0 bg-gradient-to-b from-green-50/50 to-blue-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
-                <div className="relative p-6">
-                  <div className="relative w-32 h-32 mx-auto mb-4">
-                    <div className="absolute inset-0 bg-gradient-to-br from-green-400 to-blue-400 rounded-full transform rotate-45"></div>
+                <div className="relative p-6 text-center">
+                  {/* Large circular image with gradient border */}
+                  <div className="relative mx-auto w-48 h-48 mb-6 rounded-full overflow-hidden ring-2 ring-offset-4 ring-green-500/20 group-hover:ring-green-500/40 transition-all duration-300">
                     <Image
                       src={member.photo}
                       alt={member.name}
                       fill
-                      className="rounded-full object-cover z-10 relative"
+                      className="object-cover transform group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
 
-                  <h3 className="text-2xl font-bold text-center mb-2 bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-blue-600">
+                  <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-teal-600">
                     {member.name}
                   </h3>
                   
-                  <p className="text-green-700 text-center font-medium">{member.branch}</p>
-                  <p className="text-green-600 text-center text-sm">Year: {member.year}</p>
+                  <p className="text-green-700 mt-2 font-medium">{member.branch}</p>
+                  <p className="text-green-600 text-sm">Year: {member.year}</p>
 
+                  {/* Skills with animated hover */}
                   <div className="flex flex-wrap gap-2 justify-center mt-4">
                     {member.skills.map((skill, skillIndex) => (
-                      <span 
-                        key={skillIndex}
-                        className="px-2 py-1 text-xs font-medium bg-gradient-to-r from-green-200 to-blue-200 text-green-800 rounded-full transform transition-transform duration-300 hover:scale-110"
+                      <Badge 
+                        key={skillIndex} 
+                        className="bg-gradient-to-r from-green-100 to-blue-100 hover:from-green-200 hover:to-blue-200 text-green-800 transition-colors duration-300"
                       >
                         {skill}
-                      </span>
+                      </Badge>
                     ))}
                   </div>
 
-                  <div className="flex justify-center space-x-3 mt-6">
+                  {/* Social links with hover effects */}
+                  <div className="flex justify-center space-x-4 mt-6">
                     {[
-                      { icon: Github, link: member.github, label: "GitHub" },
-                      { icon: Linkedin, link: member.linkedin, label: "LinkedIn" },
-                      { icon: Twitter, link: member.twitter, label: "Twitter" },
-                      { icon: Globe, link: member.website, label: "Website" }
+                      { icon: Github, link: member.github },
+                      { icon: Linkedin, link: member.linkedin },
+                      { icon: Twitter, link: member.twitter },
+                      { icon: Globe, link: member.website }
                     ].map((social, i) => (
-                      <motion.a
+                      <a
                         key={i}
                         href={social.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={`${member.name}'s ${social.label}`}
-                        className="p-2 rounded-full bg-gradient-to-r from-green-400 to-blue-400 text-white transition-all duration-300 hover:from-green-500 hover:to-blue-500"
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}
+                        className="p-2 rounded-full bg-green-50 hover:bg-green-100 text-green-600 hover:text-green-700 transition-colors duration-300"
                       >
                         <social.icon className="w-5 h-5" />
-                      </motion.a>
+                      </a>
                     ))}
                   </div>
                 </div>
-
-                <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-transparent to-green-100/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
+              </Card>
             </motion.div>
           ))}
         </div>
