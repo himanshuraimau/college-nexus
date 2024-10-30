@@ -2,44 +2,8 @@ import Image from "next/image"
 import { Github, Linkedin, Twitter, Globe } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { teamMembers } from "./team_members"
 
-type TeamMember = {
-  name: string
-  photo: string
-  branch: string
-  year: number
-  skills: string[]
-  github: string
-  linkedin: string
-  twitter: string
-  website: string
-}
-
-const teamMembers: TeamMember[] = [
-  {
-    name: "John Doe",
-    photo: "/placeholder.svg?height=100&width=100",
-    branch: "Computer Science",
-    year: 3,
-    skills: ["React", "Node.js", "TypeScript"],
-    github: "https://github.com/johndoe",
-    linkedin: "https://linkedin.com/in/johndoe",
-    twitter: "https://twitter.com/johndoe",
-    website: "https://johndoe.com"
-  },
-  {
-    name: "Jane Smith",
-    photo: "/placeholder.svg?height=100&width=100",
-    branch: "Information Technology",
-    year: 2,
-    skills: ["Python", "Machine Learning", "Data Science"],
-    github: "https://github.com/janesmith",
-    linkedin: "https://linkedin.com/in/janesmith",
-    twitter: "https://twitter.com/janesmith",
-    website: "https://janesmith.com"
-  },
-  // Add more team members here
-]
 
 export default function Team() {
   return (
