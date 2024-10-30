@@ -9,7 +9,7 @@ import { teamMembers } from "./team_members"
 
 export default function Team() {
   return (
-    <div className="min-h-screen py-24 relative overflow-hidden">
+    <div className="h-full pt-8 relative overflow-hidden">
       {/* Background elements matching workshop page */}
       <div className="absolute inset-0 bg-[url('/leaves.svg')] opacity-5"></div>
       <div className="absolute top-20 left-10 w-64 h-64 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
