@@ -1,51 +1,76 @@
-"use client";
-import { useRouter } from 'next/navigation';
-import { useEffect, useState } from 'react';
-import SelectForm from '../../components/SelectForm';
-import { fetchSubjects } from '../../lib/fetchSubjects';
+"use client"
+
+import { useRouter } from 'next/navigation'
+import { useEffect, useState } from 'react'
+import { motion } from "framer-motion"
+import SelectForm from '../../components/SelectForm'
+import { fetchSubjects } from '../../lib/fetchSubjects'
 
 interface Subject {
-    year: number;
-    semester: number;
-    subject: string;
-    branch: string;
+    year: number
+    semester: number
+    subject: string
+    branch: string
     resources: {
-        notes: Record<string, string>;
-        question_bank: Record<string, string>;
+        notes: Record<string, string>
+        question_bank: Record<string, string>
         pyqs: {
-            internals: Record<string, string>;
-            final_exam: string;
-        };
-    };
+            internals: Record<string, string>
+            final_exam: string
+        }
+    }
 }
 
 const ResourcePage: React.FC = () => {
-    const [subjects, setSubjects] = useState<Subject[]>([]);
-    const router = useRouter();
+    const [subjects, setSubjects] = useState<Subject[]>([])
+    const router = useRouter()
 
     useEffect(() => {
         const loadSubjects = async () => {
-            const subjects = await fetchSubjects();
-            setSubjects(subjects);
-        };
+            const subjects = await fetchSubjects()
+            setSubjects(subjects)
+        }
 
-        loadSubjects();
-    }, []);
+        loadSubjects()
+    }, [])
 
     const handleFormSubmit = (formData: { year: string; branch: string; semester: string }) => {
-        router.push(`/resources/${formData.year}/${formData.semester}/${formData.branch}`);
-    };
+        router.push(`/resources/${formData.year}/${formData.semester}/${formData.branch}`)
+    }
 
     return (
-        <div className="min-h-screen bg-gradient-to-br ">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                <h1 className="text-4xl font-bold text-center mb-8 ">Find Your Resources</h1>
-                <div className="rounded-lg shadow-md p-6">
+        <div className="min-h-screen pt-8 relative overflow-hidden ">
+            
+            <div className="absolute inset-0 bg-[url('/leaves.svg')] opacity-5"></div>
+            <div className="absolute top-20 left-10 w-64 h-64 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+            <div className="absolute top-40 right-10 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+            <div className="absolute -bottom-32 left-20 w-64 h-64 bg-teal-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
+                <motion.h1 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-4xl font-black text-center mb-16"
+                >
+                    <span className="relative">
+                        <span className="absolute -inset-1 bg-white/50 blur-xl rounded-lg"></span>
+                        <span className="relative bg-clip-text text-transparent bg-gradient-to-r from-green-600 via-teal-500 to-blue-600">
+                            Find Your Resources
+                        </span>
+                    </span>
+                </motion.h1>
+
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-6"
+                >
                     <SelectForm onSubmit={handleFormSubmit} />
-                </div>
+                </motion.div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default ResourcePage;
+export default ResourcePage
