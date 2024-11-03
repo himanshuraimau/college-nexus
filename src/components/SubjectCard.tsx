@@ -79,9 +79,9 @@ const SubjectCard: React.FC<{ subject: Subject; onBack: () => void }> = ({ subje
 }
 
 const InfoBadge: React.FC<{ icon: React.ReactNode; label: string; value: number | string }> = ({ icon, label, value }) => (
-    <Badge className="px-6 py-3 bg-gradient-to-r from-green-100 to-blue-100 text-green-800 flex items-center space-x-2 text-lg">
+    <Badge className="px-6 py-3 bg-transparent text-green-800 flex items-center space-x-2 text-lg hover:bg-white">
         {icon}
-        <span className="font-semibold">{label}:</span>
+        <span className="">{label}:</span>
         <span>{value}</span>
     </Badge>
 )

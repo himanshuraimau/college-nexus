@@ -1,9 +1,10 @@
 "use client"
 
 import { useRouter } from "next/navigation"
-import { Leaf, Sparkles,Shell, Calendar, MapPin, Github, Code, FileJson, Server, Database, Boxes, GitBranch, Globe, Bot, Cpu, Braces } from "lucide-react"
+import { Leaf, Sparkles, Shell, Calendar, MapPin, Github, Code, FileJson, Server, Database, Boxes, GitBranch, Globe, Bot, Cpu, Braces } from "lucide-react"
 import { motion } from "framer-motion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button" 
 
 const WorkshopSection = () => {
   const router = useRouter()
@@ -14,7 +15,7 @@ const WorkshopSection = () => {
     { topic: "JavaScript Basics", icon: Braces },
     { topic: "Advanced JavaScript", icon: FileJson },
     { topic: "JavaScript Projects & Advanced Concepts", icon: Boxes },
-    {topic:"Linux and Dual Booting", icon: Shell},
+    { topic: "Linux and Dual Booting", icon: Shell },
     { topic: "Competitive Programming & DSA", icon: Cpu },
     { topic: "Node.js", icon: Server },
     { topic: "HTTP & Server Fundamentals", icon: Globe },
@@ -30,7 +31,7 @@ const WorkshopSection = () => {
   ]
 
   return (
-    <div className="min-h-[calc(100vh-4rem)]  flex items-center justify-center overflow-hidden relative">
+    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden relative">
       {/* Enhanced background elements */}
       <div className="absolute inset-0 bg-[url('/leaves.svg')] opacity-5"></div>
       <div className="absolute top-20 left-10 w-64 h-64 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
@@ -101,11 +102,22 @@ const WorkshopSection = () => {
             </motion.p>
           </div>
 
+          {/* CTA Button - Moved above the syllabus outline */}
+          <Button
+        className="mb-12 rounded-lg px-8 py-6 text-lg font-semibold bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+        onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeDl4jWr8uZyOsDUp_ozx0MBg-mTiPFoSCgArLSRSVvnXVNRw/viewform", "_blank")}
+      >
+        <span className="flex items-center justify-center">
+          Register for the Workshop
+          <Sparkles className="w-5 h-5 ml-2" />
+        </span>
+      </Button>
+
           {/* Syllabus Section */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6 }}
+            transition={{ delay: 0.7 }}
             className="w-full max-w-6xl mx-auto"
           >
             <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
@@ -140,19 +152,6 @@ const WorkshopSection = () => {
               </div>
             </div>
           </motion.div>
-
-          {/* CTA Button */}
-          <motion.button
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-            className="mt-12 px-8 py-4 bg-gradient-to-r from-green-500 to-blue-500 text-white font-semibold rounded-full 
-                     hover:from-green-600 hover:to-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl 
-                     transform hover:-translate-y-1 hover:scale-105 active:scale-95"
-            onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeDl4jWr8uZyOsDUp_ozx0MBg-mTiPFoSCgArLSRSVvnXVNRw/viewform", "_blank")}
-          >
-            Sign Up for the Workshop
-          </motion.button>
         </motion.div>
       </div>
     </div>
