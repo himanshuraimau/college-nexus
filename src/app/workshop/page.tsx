@@ -1,13 +1,31 @@
-"use client"
+"use client";
 
-import { useRouter } from "next/navigation"
-import { Leaf, Sparkles, Shell, Calendar, MapPin, Github, Code, FileJson, Server, Database, Boxes, GitBranch, Globe, Bot, Cpu, Braces } from "lucide-react"
-import { motion } from "framer-motion"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button" 
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import {
+  Leaf,
+  Sparkles,
+  Shell,
+  Calendar,
+  MapPin,
+  Github,
+  Code,
+  FileJson,
+  Server,
+  Database,
+  Boxes,
+  GitBranch,
+  Globe,
+  Bot,
+  Cpu,
+  Braces,
+} from "lucide-react";
+import { motion } from "framer-motion";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 const WorkshopSection = () => {
-  const router = useRouter()
+  const router = useRouter();
 
   const weeklyTopics = [
     { topic: "Git and GitHub", icon: Github },
@@ -27,8 +45,8 @@ const WorkshopSection = () => {
     { topic: "Advanced Git & Deployment", icon: GitBranch },
     { topic: "Open Source Contributions", icon: Github },
     { topic: "Next.js", icon: Server },
-    { topic: "Generative AI Projects", icon: Bot }
-  ]
+    { topic: "Generative AI Projects", icon: Bot },
+  ];
 
   return (
     <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden relative">
@@ -37,7 +55,7 @@ const WorkshopSection = () => {
       <div className="absolute top-20 left-10 w-64 h-64 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
       <div className="absolute top-40 right-10 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
       <div className="absolute -bottom-32 left-20 w-64 h-64 bg-teal-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,7 +67,12 @@ const WorkshopSection = () => {
           <motion.div
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
-            transition={{ delay: 0.2, type: "spring", stiffness: 260, damping: 20 }}
+            transition={{
+              delay: 0.2,
+              type: "spring",
+              stiffness: 260,
+              damping: 20,
+            }}
             className="relative mb-8 group"
           >
             <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-400 rounded-full blur-2xl opacity-30 group-hover:opacity-40 transition-opacity duration-300"></div>
@@ -61,7 +84,7 @@ const WorkshopSection = () => {
 
           {/* Header Section */}
           <div className="space-y-6 mb-12">
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
@@ -92,29 +115,49 @@ const WorkshopSection = () => {
               </div>
             </motion.div>
 
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
               className="text-lg text-green-800 max-w-xl mx-auto leading-relaxed"
             >
-              Join us every Saturday (excluding holidays) to learn and practice essential skills in Web Dev, CP, DevOps, Open Source, and Generative AI!
+              Join us every Saturday (excluding holidays) to learn and practice
+              essential skills in Web Dev, CP, DevOps, Open Source, and
+              Generative AI!
             </motion.p>
           </div>
 
           {/* CTA Button - Moved above the syllabus outline */}
+
           <Button
-        className="mb-12 rounded-lg px-8 py-6 text-lg font-semibold bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
-        onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSeDl4jWr8uZyOsDUp_ozx0MBg-mTiPFoSCgArLSRSVvnXVNRw/viewform", "_blank")}
-      >
-        <span className="flex items-center justify-center">
-          Register for the Workshop
-          <Sparkles className="w-5 h-5 ml-2" />
-        </span>
-      </Button>
+            className="mb-12 rounded-lg px-8 py-6 text-lg font-semibold bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSeDl4jWr8uZyOsDUp_ozx0MBg-mTiPFoSCgArLSRSVvnXVNRw/viewform",
+                "_blank"
+              )
+            }
+          >
+            <span className="flex items-center justify-center">
+              Register for the Workshop
+              <Sparkles className="w-5 h-5 ml-2" />
+            </span>
+          </Button>
+          
+          <div className="pb-4">
+          <Link
+            href="https://github.com/himanshuraimau/cn-workshop"
+            target="_blank"
+            className="flex items-center gap-3 rounded-lg px-6 py-3 text-lg font-semibold bg-gradient-to-r from-green-500 to-blue-500 
+             hover:from-green-600 hover:to-blue-600 text-white shadow-md hover:shadow-lg transition-all duration-300"
+          >
+            <Github className="w-5 h-5" />
+            Resources of the Workshop
+          </Link>
+          </div>
 
           {/* Syllabus Section */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
@@ -125,7 +168,7 @@ const WorkshopSection = () => {
                 <span className="w-1 h-6 bg-gradient-to-b from-green-500 to-blue-500 rounded-full"></span>
                 Syllabus Outline
               </h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {weeklyTopics.map(({ topic, icon: Icon }, i) => (
                   <motion.div
@@ -155,8 +198,8 @@ const WorkshopSection = () => {
         </motion.div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 // Add these animations to your global CSS
 const style = `
@@ -183,6 +226,6 @@ const style = `
 .animation-delay-4000 {
   animation-delay: 4s;
 }
-`
+`;
 
-export default WorkshopSection
+export default WorkshopSection;
