@@ -5,50 +5,18 @@ import Link from "next/link";
 import {
   Leaf,
   Sparkles,
-  Shell,
   Calendar,
   MapPin,
   Github,
-  Code,
-  FileJson,
-  Server,
-  Database,
-  Boxes,
-  GitBranch,
-  Globe,
-  Bot,
-  Cpu,
-  Braces,
-  CircleCheck,
   CheckCheck
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { weeklyTopics } from "./topics";
 
 const WorkshopSection = () => {
   const router = useRouter();
-
-  const weeklyTopics = [
-    { topic: "Git and GitHub", icon: Github,covered: true },
-    { topic: "HTML & CSS", icon: Code,covered: true },
-    { topic: "JavaScript Basics", icon: Braces,covered: true },
-    { topic: "Advanced JavaScript", icon: FileJson ,covered:false},
-    { topic: "JavaScript Projects & Advanced Concepts", icon: Boxes,covered:false },
-    { topic: "Linux and Dual Booting", icon: Shell,covered:false },
-    { topic: "Competitive Programming & DSA", icon: Cpu,covered:false },
-    { topic: "Node.js", icon: Server,covered:false },
-    { topic: "HTTP & Server Fundamentals", icon: Globe ,covered:false},
-    { topic: "Databases (SQL)", icon: Database,covered:false },
-    { topic: "Express.js", icon: Server,covered:false },
-    { topic: "Backend Project", icon: Boxes,covered:false },
-    { topic: "React Basics & Projects", icon: Boxes ,covered:false},
-    { topic: "Advanced React & Projects", icon: Boxes ,covered:false},
-    { topic: "Advanced Git & Deployment", icon: GitBranch,covered:false },
-    { topic: "Open Source Contributions", icon: Github ,covered:false},
-    { topic: "Next.js", icon: Server ,covered:false},
-    { topic: "Generative AI Projects", icon: Bot,covered:false },
-  ];
 
   return (
     <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden relative">
@@ -179,6 +147,7 @@ const WorkshopSection = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.1 * i }}
                   >
+                    <Link href={`/workshop/${topic}`}>
                     <Card className="bg-gradient-to-br from-green-50 to-blue-50 border-green-200 hover:shadow-lg transition-all duration-300 group">
                       <CardHeader className="pb-2">
                         <CardTitle className="text-lg text-green-700 flex items-center gap-2">
@@ -192,6 +161,7 @@ const WorkshopSection = () => {
                         <p className="text-green-900">{topic} {covered ? <CheckCheck color="green" /> : null}</p>
                       </CardContent>
                     </Card>
+                    </Link>
                   </motion.div>
                 ))}
               </div>
