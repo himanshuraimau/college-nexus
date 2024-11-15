@@ -1,73 +1,91 @@
-import {
-    Leaf,
-    Sparkles,
-    Shell,
-    Calendar,
-    MapPin,
-    Github,
-    Code,
-    FileJson,
-    Server,
-    Database,
-    Boxes,
-    GitBranch,
-    Globe,
-    Bot,
-    Cpu,
-    Braces,
-    CheckCheck
-  } from "lucide-react";
+import { Leaf, Sparkles, Shell, Calendar, MapPin, Github, Code, FileJson, Server, Database, Boxes, GitBranch, Globe, Bot, Cpu, Braces, CheckCheck } from 'lucide-react';
 
+export interface WeeklyTopic {
+  topic: string;
+  icon: React.ElementType;
+  covered: boolean;
+}
 
-export const weeklyTopics = [
-    { topic: "Git and GitHub", icon: Github,covered: true },
-    { topic: "HTML & CSS", icon: Code,covered: true },
-    { topic: "JavaScript Basics", icon: Braces,covered: true },
-    { topic: "Advanced JavaScript", icon: FileJson ,covered:false},
-    { topic: "JavaScript Projects & Advanced Concepts", icon: Boxes,covered:false },
-    { topic: "Linux and Dual Booting", icon: Shell,covered:false },
-    { topic: "Competitive Programming & DSA", icon: Cpu,covered:false },
-    { topic: "Node.js", icon: Server,covered:false },
-    { topic: "HTTP & Server Fundamentals", icon: Globe ,covered:false},
-    { topic: "Databases (SQL)", icon: Database,covered:false },
-    { topic: "Express.js", icon: Server,covered:false },
-    { topic: "Backend Project", icon: Boxes,covered:false },
-    { topic: "React Basics & Projects", icon: Boxes ,covered:false},
-    { topic: "Advanced React & Projects", icon: Boxes ,covered:false},
-    { topic: "Advanced Git & Deployment", icon: GitBranch,covered:false },
-    { topic: "Open Source Contributions", icon: Github ,covered:false},
-    { topic: "Next.js", icon: Server ,covered:false},
-    { topic: "Generative AI Projects", icon: Bot,covered:false },
-  ];
+export interface Resource {
+  title: string;
+  url: string;
+}
 
-export const topicResources = {
-    "Git and GitHub": {
-      notes: [
-        { title: "Git Basics", url: "https://example.com/git-basics" },
-        { title: "GitHub Workflow", url: "https://example.com/github-workflow" },
-      ],
-      assignments: [
-        { title: "Create a Repository", url: "https://example.com/git-assignment-1" },
-        { title: "Collaborate on a Project", url: "https://example.com/git-assignment-2" },
-      ],
-      extraResources: [
-        { title: "Git Cheat Sheet", url: "https://example.com/git-cheat-sheet" },
-        { title: "GitHub Learning Lab", url: "https://lab.github.com/" },
-      ],
-    },
-    "HTML & CSS": {
-      notes: [
-        { title: "HTML Structure", url: "https://example.com/html-structure" },
-        { title: "CSS Fundamentals", url: "https://example.com/css-fundamentals" },
-      ],
-      assignments: [
-        { title: "Build a Simple Webpage", url: "https://example.com/html-css-assignment-1" },
-        { title: "Create a Responsive Layout", url: "https://example.com/html-css-assignment-2" },
-      ],
-      extraResources: [
+export interface TopicResources {
+  notes: Resource[];
+  assignments: Resource[];
+  extraResources: Resource[];
+}
+
+export const weeklyTopics: WeeklyTopic[] = [
+  { topic: "Git and GitHub", icon: Github, covered: true },
+  { topic: "HTML & CSS", icon: Code, covered: true },
+  { topic: "JavaScript Basics", icon: Braces, covered: true },
+  { topic: "Advanced JavaScript", icon: FileJson, covered: false },
+  { topic: "JavaScript Projects & Advanced Concepts", icon: Boxes, covered: false },
+  { topic: "Linux and Dual Booting", icon: Shell, covered: false },
+  { topic: "Competitive Programming & DSA", icon: Cpu, covered: false },
+  { topic: "Node.js", icon: Server, covered: false },
+  { topic: "HTTP & Server Fundamentals", icon: Globe, covered: false },
+  { topic: "Databases (SQL)", icon: Database, covered: false },
+  { topic: "Express.js", icon: Server, covered: false },
+  { topic: "Backend Project", icon: Boxes, covered: false },
+  { topic: "React Basics & Projects", icon: Boxes, covered: false },
+  { topic: "Advanced React & Projects", icon: Boxes, covered: false },
+  { topic: "Advanced Git & Deployment", icon: GitBranch, covered: false },
+  { topic: "Open Source Contributions", icon: Github, covered: false },
+  { topic: "Next.js", icon: Server, covered: false },
+  { topic: "Generative AI Projects", icon: Bot, covered: false },
+];
+
+export const topicResources: Record<string, TopicResources> = {
+  "Git and GitHub": {
+    notes: [
+      { title: "Git Basics", url: "https://github.com/himanshuraimau/cn-workshop/blob/main/week1/git_github.pdf" },
+    ],
+    assignments: [
+      
+    ],
+    extraResources: [
+        { title: "Video on Git and Github", url: "https://youtu.be/RDxQEzXN8AU"},
+      { title: "Git Cheat Sheet", url: "https://github.com/himanshuraimau/cn-workshop/blob/main/week1/git-cheat-sheet-education.pdf" },
+      { title: "Chai aur code docs", url: "https://docs.chaicode.com/git-and-github/" },
+      { title: "Git Handbook", url: "https://guides.github.com/introduction/git-handbook/" },
+    ],
+  },
+  "HTML & CSS": {
+    notes: [
+      { title: "Notion Notes", url: "https://scalloped-magazine-6c1.notion.site/HTML-AND-CSS-1354ee77527480ef88a9cfecb5e99b64?pvs=4" },
+    ],
+    assignments: [
+      { title: "Assignment 1", url: "https://github.com/himanshuraimau/cn-workshop/tree/main/week2/assignment/assig1" },
+      { title: "Assignment 2", url: "https://github.com/himanshuraimau/cn-workshop/tree/main/week2/assignment/assig2"}
+    ],
+    extraResources: [
+      { title: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/" },
+      { title: "CSS Tricks", url: "https://css-tricks.com/" },
+      { title: "Flexbox Froggy", url: "https://flexboxfroggy.com/" },
+      { title: "Grid Garden", url: "https://cssgridgarden.com/" },
+      { title: "HTML & CSS Cheatsheet", url: "https://htmlcheatsheet.com/" },
+      
+      
+    ],
+  },
+    "JavaScript Basics": {
+        notes: [
+        { title: "Notion Notes", url: "https://scalloped-magazine-6c1.notion.site/JAVASCRIPT-13b4ee77527480db9d72f4fe06987115?pvs=4" },
+        ],
+        assignments: [
+        { title: "Assignment 1", url: ""},
+        ],
+        extraResources: [
         { title: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/" },
-        { title: "CSS Tricks", url: "https://css-tricks.com/" },
-      ],
+        { title: "JavaScript.info", url: "https://javascript.info/" },
+        { title: "W3Schools", url: "https://www.w3schools.com/" },
+        { title: "Codecademy", url: "https://www.codecademy.com/learn/introduction-to-javascript" },
+        { title: "JavaScript Cheatsheet", url: "https://htmlcheatsheet.com/js/" },
+        ],
     },
-    // Add more topics here...
-  }
+
+  
+};

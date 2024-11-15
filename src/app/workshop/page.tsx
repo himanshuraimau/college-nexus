@@ -8,7 +8,8 @@ import {
   Calendar,
   MapPin,
   Github,
-  CheckCheck
+  CheckCheck,
+  CheckCircle
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -114,17 +115,6 @@ const WorkshopSection = () => {
             </span>
           </Button>
           
-          <div className="pb-4">
-          <Link
-            href="https://github.com/himanshuraimau/cn-workshop"
-            target="_blank"
-            className="flex items-center gap-3 rounded-lg px-6 py-3 text-lg font-semibold bg-gradient-to-r from-green-500 to-blue-500 
-             hover:from-green-600 hover:to-blue-600 text-white shadow-md hover:shadow-lg transition-all duration-300"
-          >
-            <Github className="w-5 h-5" />
-            Resources of the Workshop
-          </Link>
-          </div>
 
           {/* Syllabus Section */}
           <motion.div
@@ -158,7 +148,7 @@ const WorkshopSection = () => {
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-green-900">{topic} {covered ? <CheckCheck color="green" /> : null}</p>
+                        <p className="text-green-900">{topic} {covered ? <CheckCircle className="w-8 h-8 text-green-500" /> : null}</p>
                       </CardContent>
                     </Card>
                     </Link>
@@ -173,31 +163,6 @@ const WorkshopSection = () => {
   );
 };
 
-// Add these animations to your global CSS
-const style = `
-@keyframes blob {
-  0% { transform: translate(0px, 0px) scale(1); }
-  33% { transform: translate(30px, -50px) scale(1.1); }
-  66% { transform: translate(-20px, 20px) scale(0.9); }
-  100% { transform: translate(0px, 0px) scale(1); }
-}
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-.animate-blob {
-  animation: blob 7s infinite;
-}
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-.animation-delay-2000 {
-  animation-delay: 2s;
-}
-.animation-delay-4000 {
-  animation-delay: 4s;
-}
-`;
+
 
 export default WorkshopSection;
