@@ -19,6 +19,8 @@ import {
   Bot,
   Cpu,
   Braces,
+  CircleCheck,
+  CheckCheck
 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -28,24 +30,24 @@ const WorkshopSection = () => {
   const router = useRouter();
 
   const weeklyTopics = [
-    { topic: "Git and GitHub", icon: Github },
-    { topic: "HTML & CSS", icon: Code },
-    { topic: "JavaScript Basics", icon: Braces },
-    { topic: "Advanced JavaScript", icon: FileJson },
-    { topic: "JavaScript Projects & Advanced Concepts", icon: Boxes },
-    { topic: "Linux and Dual Booting", icon: Shell },
-    { topic: "Competitive Programming & DSA", icon: Cpu },
-    { topic: "Node.js", icon: Server },
-    { topic: "HTTP & Server Fundamentals", icon: Globe },
-    { topic: "Databases (SQL)", icon: Database },
-    { topic: "Express.js", icon: Server },
-    { topic: "Backend Project", icon: Boxes },
-    { topic: "React Basics & Projects", icon: Boxes },
-    { topic: "Advanced React & Projects", icon: Boxes },
-    { topic: "Advanced Git & Deployment", icon: GitBranch },
-    { topic: "Open Source Contributions", icon: Github },
-    { topic: "Next.js", icon: Server },
-    { topic: "Generative AI Projects", icon: Bot },
+    { topic: "Git and GitHub", icon: Github,covered: true },
+    { topic: "HTML & CSS", icon: Code,covered: true },
+    { topic: "JavaScript Basics", icon: Braces,covered: true },
+    { topic: "Advanced JavaScript", icon: FileJson ,covered:false},
+    { topic: "JavaScript Projects & Advanced Concepts", icon: Boxes,covered:false },
+    { topic: "Linux and Dual Booting", icon: Shell,covered:false },
+    { topic: "Competitive Programming & DSA", icon: Cpu,covered:false },
+    { topic: "Node.js", icon: Server,covered:false },
+    { topic: "HTTP & Server Fundamentals", icon: Globe ,covered:false},
+    { topic: "Databases (SQL)", icon: Database,covered:false },
+    { topic: "Express.js", icon: Server,covered:false },
+    { topic: "Backend Project", icon: Boxes,covered:false },
+    { topic: "React Basics & Projects", icon: Boxes ,covered:false},
+    { topic: "Advanced React & Projects", icon: Boxes ,covered:false},
+    { topic: "Advanced Git & Deployment", icon: GitBranch,covered:false },
+    { topic: "Open Source Contributions", icon: Github ,covered:false},
+    { topic: "Next.js", icon: Server ,covered:false},
+    { topic: "Generative AI Projects", icon: Bot,covered:false },
   ];
 
   return (
@@ -170,7 +172,7 @@ const WorkshopSection = () => {
               </h2>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {weeklyTopics.map(({ topic, icon: Icon }, i) => (
+                {weeklyTopics.map(({ topic, icon: Icon,covered }, i) => (
                   <motion.div
                     key={i}
                     initial={{ opacity: 0, y: 20 }}
@@ -187,7 +189,7 @@ const WorkshopSection = () => {
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-green-900">{topic}</p>
+                        <p className="text-green-900">{topic} {covered ? <CheckCheck color="green" /> : null}</p>
                       </CardContent>
                     </Card>
                   </motion.div>
