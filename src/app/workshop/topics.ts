@@ -20,9 +20,10 @@ export interface TopicResources {
 export const weeklyTopics: WeeklyTopic[] = [
   { topic: "Git and GitHub", icon: Github, covered: true },
   { topic: "HTML & CSS", icon: Code, covered: true },
-  { topic: "JavaScript Basics", icon: Braces, covered: true },
-  { topic: "Advanced JavaScript", icon: FileJson, covered: false },
-  { topic: "JavaScript Projects & Advanced Concepts", icon: Boxes, covered: false },
+  { topic: "JavaScript Intro", icon: Braces, covered: true },
+  { topic: "JavaScript Basics 1", icon: FileJson, covered: true },
+  { topic: "JavaScript Basics 2", icon: Boxes, covered: false },
+  {topic: "JavaScript Advance+ Projects", icon: CheckCheck, covered: false},
   { topic: "Linux and Dual Booting", icon: Shell, covered: false },
   { topic: "Competitive Programming & DSA", icon: Cpu, covered: false },
   { topic: "Node.js", icon: Server, covered: false },
@@ -71,12 +72,12 @@ export const topicResources: Record<string, TopicResources> = {
       
     ],
   },
-    "JavaScript Basics": {
+    "JavaScript Intro": {
         notes: [
         { title: "Notion Notes", url: "https://scalloped-magazine-6c1.notion.site/JAVASCRIPT-13b4ee77527480db9d72f4fe06987115?pvs=4" },
         ],
         assignments: [
-        { title: "Assignment 1", url: ""},
+        { title: "Assignment 1", url: "https://github.com/himanshuraimau/cn-workshop/tree/main/week4/assignment"},
         ],
         extraResources: [
         { title: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/" },
@@ -86,6 +87,39 @@ export const topicResources: Record<string, TopicResources> = {
         { title: "JavaScript Cheatsheet", url: "https://htmlcheatsheet.com/js/" },
         ],
     },
+    "JavaScript Basics 1": {
+        notes: [
+        { title: "Javascript.info", url: "https://javascript.info/" },
+        ],
+        assignments: [
+        { title: "Assignment", url: "https://github.com/himanshuraimau/cn-workshop/tree/main/week4/assignment"},
+        ],
+        extraResources: [
+        { title: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/" },
+        { title: "JavaScript.info", url: "https://javascript.info/" },
+        { title: "W3Schools", url: "https://www.w3schools.com/" },
+        { title: "Codecademy", url: "https://www.codecademy.com/learn/introduction-to-javascript" },
+        { title: "JavaScript Cheatsheet", url: "https://htmlcheatsheet.com/js/" },
+        ],
+      },
+      "JavaScript Basics 2": {
+        notes: [
+        { title: "Javascript.info", url: "https://javascript.info/" },
+        ],
+        assignments: [
+        { title: "Assignment", url: "https://github.com/himanshuraimau/cn-workshop/tree/main/week4/assignment"},
+        ],
+        extraResources: [
+        { title: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/" },
+        { title: "JavaScript.info", url: "https://javascript.info/" },
+        { title: "W3Schools", url: "https://www.w3schools.com/" },
+        { title: "Codecademy", url: "https://www.codecademy.com/learn/introduction-to-javascript" },
+        { title: "JavaScript Cheatsheet", url: "https://htmlcheatsheet.com/js/" },
+        ],
+      },
+      
+
+
 
   
 };
