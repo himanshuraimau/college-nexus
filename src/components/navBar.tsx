@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion"
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false)
-  const navItems = ["Workshop", "Resources", "Team", "News"]
+  const navItems = ["Workshop","AcadBlogs", "Resources", "Team"]
 
   return (
     <div className="relative">
