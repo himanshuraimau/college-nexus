@@ -2,8 +2,9 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
+import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from "framer-motion"
+import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -15,7 +16,7 @@ const Navbar = () => {
       
       <div className="relative">
         <div className="container mx-auto pt-4">
-          <nav className="bg-white/70 backdrop-blur-sm rounded-full border border-green-200/30 shadow-lg px-6 py-3">
+          <nav className="bg-white/70 backdrop-blur-sm rounded-full border border-green-200/30 shadow-lg px-8 py-3">
             <div className="flex items-center justify-between">
               <Link 
                 href="/" 
@@ -40,6 +41,16 @@ const Navbar = () => {
                 ))}
               </div>
 
+              <div className="hidden md:flex items-center space-x-4">
+                <SignedOut>
+                  <SignInButton>
+                  </SignInButton>
+                </SignedOut>
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
+              </div>
+
               <button
                 className="md:hidden text-green-700 focus:outline-none"
                 onClick={() => setIsOpen(!isOpen)}
@@ -60,7 +71,7 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
             className="absolute top-full left-0 w-full bg-white/90 backdrop-blur-md shadow-lg rounded-b-3xl overflow-hidden z-50"
           >
-            <div className="container mx-auto py-4 flex flex-col items-center space-y-4">
+            <div className="md:hidden container mx-auto py-4 flex flex-col items-center space-y-4">
               {navItems.map((item, index) => (
                 <motion.div
                   key={item}
@@ -77,6 +88,12 @@ const Navbar = () => {
                   </Link>
                 </motion.div>
               ))}
+              <SignedOut>
+                <SignInButton/>
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
             </div>
           </motion.div>
         )}
@@ -86,3 +103,4 @@ const Navbar = () => {
 }
 
 export default Navbar
+
