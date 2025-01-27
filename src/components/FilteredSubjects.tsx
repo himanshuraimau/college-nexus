@@ -42,7 +42,7 @@ const FilteredSubjects: React.FC<{ subjects: Subject[] }> = ({ subjects }) => {
             <motion.button 
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="mb-8 px-6 py-3 bg-gradient-to-r from-green-500 to-teal-500 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-green-400"
+                className="mb-8 px-6 py-3 bg-gradient-to-r from-[var(--workshop-gradient-from)] to-[var(--workshop-gradient-to)] text-white rounded-full button-glow transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[var(--nav-hover)]"
                 onClick={handleBackToResources}
             >
                 Back to Resources
@@ -101,7 +101,7 @@ const FilteredSubjects: React.FC<{ subjects: Subject[] }> = ({ subjects }) => {
                             </motion.div>
                         ))
                     ) : (
-                        <p className="text-center text-gray-700 col-span-full">No resources found for the selected criteria.</p>
+                        <p className="text-center text-white text-glow col-span-full">No resources found for the selected criteria.</p>
                     )}
                 </div>
             )}

@@ -12,45 +12,43 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-      <div className="absolute top-0 left-0 w-full h-28" />
+      <div className="top-0 left-0 right-0 z-50 px-4">
+        <nav className="bg-[var(--nav-bg)]/80 backdrop-blur-md rounded-2xl shadow-lg px-4 py-2">
+          <div className="flex items-center gap-12">
+            <Link
+              href="/"
+              className="text-xl font-semibold relative group"
+            >
+              <span className="text-white text-glow bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+                CollegeNexus
+              </span>
+              <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-blue-500 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+            </Link>
 
-      <div className="relative">
-        <div className="container mx-auto pt-4">
-          <nav className="bg-white/70 backdrop-blur-sm rounded-full border border-green-200/30 shadow-lg px-8 py-3">
-            <div className="flex items-center justify-between">
-              <Link
-                href="/"
-                className="text-lg font-bold relative group"
-              >
-                <span className="bg-gradient-to-r from-green-700 to-blue-600 bg-clip-text text-transparent">
-                  CollegeNexus
-                </span>
-                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-green-600 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-              </Link>
-
-              <div className="hidden md:flex items-center space-x-6">
-                {navItems.map((item) => (
-                  <Link
-                    key={item}
-                    href={`/${item.toLowerCase()}`}
-                    className="relative text-md text-green-800 hover:text-green-900 transition-colors group"
-                  >
+            <div className="hidden md:flex items-center space-x-6 pt-2 text-md">
+              {navItems.map((item) => (
+                <Link
+                  key={item}
+                  href={`/${item.toLowerCase()}`}
+                  className="relative group px-3 rounded-lg text-white/90 hover:text-white transition-all duration-300"
+                >
+                  <span className="relative z-10">
                     {item}
-                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-green-600 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-                  </Link>
-                ))}
-              </div>
-
-
-              <button
-                className="md:hidden text-green-700 focus:outline-none"
-                onClick={() => setIsOpen(!isOpen)}
-              >
-                {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-              </button>
+                  </span>
+                  <span className="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-500/20 to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-blue-500 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+                </Link>
+              ))}
             </div>
-          </nav>
-        </div>
+
+            <button
+              className="md:hidden ml-auto relative group p-2 rounded-lg bg-gradient-to-r from-blue-500/10 to-purple-500/10 hover:from-blue-500/20 hover:to-purple-500/20 transition-all duration-300"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X className="h-6 w-6 text-white" /> : <Menu className="h-6 w-6 text-white" />}
+            </button>
+          </div>
+        </nav>
       </div>
 
       <AnimatePresence>
@@ -59,10 +57,10 @@ const Navbar = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className="absolute top-full left-0 w-full bg-white/90 backdrop-blur-md shadow-lg rounded-b-3xl overflow-hidden z-50"
+            transition={{ duration: 0.2 }}
+            className="fixed top-20 left-4 right-4 bg-[var(--nav-bg)]/95 backdrop-blur-md rounded-xl shadow-lg overflow-hidden z-50"
           >
-            <div className="md:hidden container mx-auto py-4 flex flex-col items-center space-y-4">
+            <div className="md:hidden py-4 flex flex-col items-stretch">
               {navItems.map((item, index) => (
                 <motion.div
                   key={item}
@@ -72,10 +70,11 @@ const Navbar = () => {
                 >
                   <Link
                     href={`/${item.toLowerCase()}`}
-                    className="block py-3 px-6 text-green-800 hover:bg-green-100 transition-colors rounded-lg"
+                    className="block px-6 py-3 text-white/90 hover:text-white relative group"
                     onClick={() => setIsOpen(false)}
                   >
-                    {item}
+                    <span className="relative z-10">{item}</span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-blue-500/0 to-purple-500/0 group-hover:from-blue-500/20 group-hover:to-purple-500/20 transition-all duration-300" />
                   </Link>
                 </motion.div>
               ))}

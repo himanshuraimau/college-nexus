@@ -39,12 +39,11 @@ const ResourcePage: React.FC = () => {
     }
 
     return (
-        <div className="min-h-screen pt-8 relative overflow-hidden ">
-            
+        <div className="min-h-screen pt-8 relative overflow-hidden bg-[var(--hero-gradient-from)]">
             <div className="absolute inset-0 bg-[url('/leaves.svg')] opacity-5"></div>
-            <div className="absolute top-20 left-10 w-64 h-64 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
-            <div className="absolute top-40 right-10 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
-            <div className="absolute -bottom-32 left-20 w-64 h-64 bg-teal-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
+            <div className="absolute top-20 left-10 w-64 h-64 bg-blue-400/20 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+            <div className="absolute top-40 right-10 w-64 h-64 bg-blue-500/20 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
+            <div className="absolute -bottom-32 left-20 w-64 h-64 bg-blue-300/20 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 relative z-10">
                 <motion.h1 
@@ -53,8 +52,8 @@ const ResourcePage: React.FC = () => {
                     className="text-4xl font-black text-center mb-16"
                 >
                     <span className="relative">
-                        <span className="absolute -inset-1 bg-white/50 blur-xl rounded-lg"></span>
-                        <span className="relative bg-clip-text text-transparent bg-gradient-to-r from-green-600 via-teal-500 to-blue-600">
+                        <span className="absolute -inset-1 bg-[var(--nav-hover)]/10 blur-xl rounded-lg"></span>
+                        <span className="relative text-white text-glow">
                             Find Your Resources
                         </span>
                     </span>
@@ -64,7 +63,6 @@ const ResourcePage: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="bg-white/80 backdrop-blur-sm rounded-xl shadow-lg p-6"
                 >
                     <SelectForm onSubmit={handleFormSubmit} />
                 </motion.div>

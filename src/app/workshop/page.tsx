@@ -3,7 +3,6 @@
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import {
-  Leaf,
   Sparkles,
   Calendar,
   MapPin,
@@ -20,10 +19,10 @@ const WorkshopSection = () => {
   const router = useRouter();
 
   return (
-    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden relative">
-      {/* Enhanced background elements */}
-      <div className="absolute inset-0 bg-[url('/leaves.svg')] opacity-5"></div>
-      <div className="absolute top-20 left-10 w-64 h-64 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
+    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden relative bg-[var(--hero-gradient-from)]">
+      {/* Background elements */}
+      <div className="absolute inset-0 bg-[url('/leaves.svg')] opacity-[0.03]"></div>
+      <div className="absolute top-20 left-10 w-64 h-64 bg-[var(--nav-hover)]/20 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
       <div className="absolute top-40 right-10 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
       <div className="absolute -bottom-32 left-20 w-64 h-64 bg-teal-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
 
@@ -48,7 +47,7 @@ const WorkshopSection = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-green-400 to-blue-400 rounded-full blur-2xl opacity-30 group-hover:opacity-40 transition-opacity duration-300"></div>
             <div className="relative">
-              <Leaf className="w-20 h-20 text-green-600 animate-float" />
+             
               <Sparkles className="w-6 h-6 text-blue-400 absolute -top-2 -right-2 animate-pulse" />
             </div>
           </motion.div>
@@ -62,8 +61,8 @@ const WorkshopSection = () => {
               className="text-4xl md:text-5xl font-black leading-tight"
             >
               <span className="relative">
-                <span className="absolute -inset-1 bg-white/50 blur-xl rounded-lg"></span>
-                <span className="relative bg-clip-text text-transparent bg-gradient-to-r from-green-600 via-teal-500 to-blue-600">
+                <span className="absolute -inset-1 bg-[var(--nav-hover)]/10 blur-xl rounded-lg"></span>
+                <span className="relative text-white text-glow">
                   College Nexus Workshop
                 </span>
               </span>
@@ -76,11 +75,11 @@ const WorkshopSection = () => {
               transition={{ delay: 0.4 }}
               className="flex flex-wrap gap-4 justify-center"
             >
-              <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full text-green-800">
+              <div className="flex items-center gap-2 bg-[var(--nav-bg)]/80 backdrop-blur-sm px-4 py-2 rounded-full text-white">
                 <Calendar className="w-4 h-4" />
                 <span>Every Saturday</span>
               </div>
-              <div className="flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full text-green-800">
+              <div className="flex items-center gap-2 bg-[var(--nav-bg)]/80 backdrop-blur-sm px-4 py-2 rounded-full text-white">
                 <MapPin className="w-4 h-4" />
                 <span>SIT College, CSE Building</span>
               </div>
@@ -90,7 +89,7 @@ const WorkshopSection = () => {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="text-lg text-green-800 max-w-xl mx-auto leading-relaxed"
+              className="text-lg text-[var(--hero-text-color)] max-w-xl mx-auto leading-relaxed"
             >
               Join us every Saturday (excluding holidays) to learn and practice
               essential skills in Web Dev, CP, DevOps, Open Source, and
@@ -101,7 +100,7 @@ const WorkshopSection = () => {
           {/* CTA Button - Moved above the syllabus outline */}
 
           <Button
-            className="mb-12 rounded-lg px-8 py-6 text-lg font-semibold bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+            className="mb-12 rounded-lg px-8 py-6 text-lg font-semibold bg-gradient-to-r from-[var(--workshop-gradient-from)] to-[var(--workshop-gradient-to)] text-white button-glow transition-all duration-300"
             onClick={() =>
               window.open(
                 "https://docs.google.com/forms/d/e/1FAIpQLSeDl4jWr8uZyOsDUp_ozx0MBg-mTiPFoSCgArLSRSVvnXVNRw/viewform",
@@ -123,8 +122,8 @@ const WorkshopSection = () => {
             transition={{ delay: 0.7 }}
             className="w-full max-w-6xl mx-auto"
           >
-            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300">
-              <h2 className="text-2xl font-bold text-green-800 mb-6 flex items-center gap-3 border-b border-green-100 pb-4">
+            <div className="bg-[var(--nav-bg)]/90 backdrop-blur-md p-8 rounded-2xl border border-[var(--nav-border)] shadow-xl">
+              <h2 className="text-2xl font-bold text-white text-glow mb-6 flex items-center gap-3 border-b border-[var(--nav-border)] pb-4">
                 <span className="w-1 h-6 bg-gradient-to-b from-green-500 to-blue-500 rounded-full"></span>
                 Syllabus Outline
               </h2>
@@ -138,17 +137,17 @@ const WorkshopSection = () => {
                     transition={{ delay: 0.1 * i }}
                   >
                     <Link href={`/workshop/${topic}`}>
-                    <Card className="bg-gradient-to-br from-green-50 to-blue-50 border-green-200 hover:shadow-lg transition-all duration-300 group">
+                    <Card className="bg-[var(--nav-bg)]/80 backdrop-blur-sm border-[var(--nav-border)] hover:shadow-lg transition-all duration-300 group">
                       <CardHeader className="pb-2">
-                        <CardTitle className="text-lg text-green-700 flex items-center gap-2">
-                          <div className="p-2 bg-green-100 rounded-full group-hover:bg-green-200 transition-colors">
-                            <Icon className="w-5 h-5 text-green-600" />
+                        <CardTitle className="text-lg text-white flex items-center gap-2">
+                          <div className="p-2 bg-blue-200 rounded-full group-hover:bg-white-200 transition-colors">
+                            <Icon className="w-5 h-5 text-blue-600" />
                           </div>
                           Week {i + 1}
                         </CardTitle>
                       </CardHeader>
                       <CardContent>
-                        <p className="text-green-900">{topic} {covered ? <CheckCircle className="w-8 h-8 text-green-500" /> : null}</p>
+                        <p className="text-white">{topic} {covered ? <CheckCircle className="w-8 h-8 text-blue-500" /> : null}</p>
                       </CardContent>
                     </Card>
                     </Link>

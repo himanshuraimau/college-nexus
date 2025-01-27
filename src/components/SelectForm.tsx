@@ -37,16 +37,16 @@ const SelectForm: React.FC<SelectFormProps> = ({ onSubmit }) => {
 
     return (
         <div className="flex items-center justify-center w-full max-w-md mx-auto">
-            <form onSubmit={handleSubmit} className="flex flex-col p-8 shadow-xl w-full space-y-6 rounded-2xl bg-white/80 backdrop-blur-sm">
-                <h2 className="text-3xl font-bold mb-6 text-center text-green-700 flex items-center justify-center">
-                    <Leaf className="w-8 h-8 mr-2 text-green-600" />
+            <form onSubmit={handleSubmit} className="flex flex-col p-8 shadow-xl w-full space-y-6 rounded-2xl bg-[var(--nav-bg)] backdrop-blur-md border border-[var(--nav-border)]">
+                <h2 className="text-3xl font-bold mb-6 text-center text-white text-glow flex items-center justify-center">
+                    <Leaf className="w-8 h-8 mr-2 text-[var(--nav-hover)]" />
                     Select Your Resources
                 </h2>
                 
                 {['year', 'branch', 'semester'].map((field) => (
                     <div key={field} className="relative">
                         <select
-                            className="appearance-none w-full p-4 border border-green-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 bg-green-50 transition-all duration-200 hover:bg-green-100 text-green-900"
+                            className="appearance-none w-full p-4 border border-[var(--nav-border)] rounded-xl focus:outline-none focus:ring-2 focus:ring-[var(--nav-hover)] bg-[rgba(56,189,248,0.1)] transition-all duration-200 hover:bg-[rgba(56,189,248,0.15)] text-white backdrop-blur-sm"
                             value={field === 'year' ? year : field === 'branch' ? branch : semester}
                             onChange={(e) => {
                                 if (field === 'year') setYear(e.target.value);
@@ -66,7 +66,7 @@ const SelectForm: React.FC<SelectFormProps> = ({ onSubmit }) => {
                                 <option key={sem} value={sem}>{sem}</option>
                             ))}
                         </select>
-                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-green-700">
+                        <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-[var(--nav-hover)]">
                             <ChevronDown className="h-4 w-4" />
                         </div>
                     </div>
@@ -75,7 +75,7 @@ const SelectForm: React.FC<SelectFormProps> = ({ onSubmit }) => {
                 <div className='flex justify-center items-center'>
                     <button
                         type="submit"
-                        className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-green-500 to-blue-500 rounded-full shadow-lg hover:from-green-600 hover:to-blue-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-green-300"
+                        className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-[var(--workshop-gradient-from)] to-[var(--workshop-gradient-to)] rounded-full button-glow transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-[var(--nav-hover)]"
                     >
                         Submit
                     </button>
@@ -91,14 +91,14 @@ const SelectForm: React.FC<SelectFormProps> = ({ onSubmit }) => {
                     display: none;
                 }
                 select option {
-                    background-color: white;
-                    color: #065f46;
+                    background-color: var(--hero-gradient-from);
+                    color: white;
                     padding: 10px;
                 }
                 select option:hover,
                 select option:focus,
                 select option:active {
-                    background-color: #d1fae5;
+                    background-color: rgba(56,189,248,0.2);
                 }
                 @media screen and (-webkit-min-device-pixel-ratio:0) {
                     select {

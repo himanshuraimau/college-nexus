@@ -45,102 +45,52 @@ export default function Registration() {
 
   return (
     <div className="flex min-h-screen items-center justify-center w-full max-w-md mx-auto p-2">
-      <Card className="w-full shadow-xl bg-white/80 backdrop-blur-sm">
+      <Card className="w-full shadow-xl bg-[var(--nav-bg)] backdrop-blur-md border border-[var(--nav-border)]">
         <CardHeader>
-          <CardTitle className="text-3xl font-bold text-center text-green-700 flex items-center justify-center">
-            <Leaf className="w-8 h-8 mr-2 text-green-600" />
+          <CardTitle className="text-3xl font-bold text-center text-white text-glow flex items-center justify-center">
+            <Leaf className="w-8 h-8 mr-2 text-[var(--nav-hover)]" />
             Registration Form
           </CardTitle>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-4">
-              <div>
-                <Label htmlFor="name" className="text-sm font-medium text-green-700">
-                  Your Name <span className="text-red-500">*</span>
-                </Label>
-                <Input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  className="w-full p-4 border-green-300 rounded-xl bg-green-50 hover:bg-green-100 text-green-900 focus:ring-2 focus:ring-green-500 transition-all duration-200"
-                  placeholder="Enter your full name"
-                />
-              </div>
+              {["name", "usn", "email", "phone"].map((field) => (
+                <div key={field}>
+                  <Label htmlFor={field} className="text-sm font-medium text-white">
+                    {field.charAt(0).toUpperCase() + field.slice(1)} <span className="text-red-400">*</span>
+                  </Label>
+                  <Input
+                    type={field === "email" ? "email" : field === "phone" ? "tel" : "text"}
+                    id={field}
+                    name={field}
+                    value={formData[field as keyof typeof formData]}
+                    onChange={handleChange}
+                    required
+                    className="w-full p-4 border-[var(--nav-border)] rounded-xl bg-[rgba(56,189,248,0.1)] hover:bg-[rgba(56,189,248,0.15)] text-white backdrop-blur-sm focus:ring-2 focus:ring-[var(--nav-hover)] transition-all duration-200"
+                    placeholder={`Enter your ${field}`}
+                  />
+                </div>
+              ))}
 
               <div>
-                <Label htmlFor="usn" className="text-sm font-medium text-green-700">
-                  USN <span className="text-red-500">*</span>
-                </Label>
-                <Input
-                  type="text"
-                  id="usn"
-                  name="usn"
-                  value={formData.usn}
-                  onChange={handleChange}
-                  required
-                  className="w-full p-4 border-green-300 rounded-xl bg-green-50 hover:bg-green-100 text-green-900 focus:ring-2 focus:ring-green-500 transition-all duration-200"
-                  placeholder="Enter your USN"
-                />
-              </div>
-
-              <div>
-                <Label htmlFor="email" className="text-sm font-medium text-green-700">
-                  Email <span className="text-red-500">*</span>
-                </Label>
-                <Input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                  className="w-full p-4 border-green-300 rounded-xl bg-green-50 hover:bg-green-100 text-green-900 focus:ring-2 focus:ring-green-500 transition-all duration-200"
-                  placeholder="Enter your email address"
-                />
-              </div>
-
-              <div>
-                <Label htmlFor="phone" className="text-sm font-medium text-green-700">
-                  Phone Number <span className="text-red-500">*</span>
-                </Label>
-                <Input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  required
-                  className="w-full p-4 border-green-300 rounded-xl bg-green-50 hover:bg-green-100 text-green-900 focus:ring-2 focus:ring-green-500 transition-all duration-200"
-                  placeholder="Enter your phone number"
-                />
-              </div>
-
-              <div>
-                <Label htmlFor="branch" className="text-sm font-medium text-green-700">
+                <Label htmlFor="branch" className="text-sm font-medium text-white">
                   Branch
                 </Label>
                 <Select onValueChange={handleBranchChange} value={formData.branch}>
-                  <SelectTrigger id="branch" className="w-full p-4 border-green-300 rounded-xl bg-green-50 hover:bg-green-100 text-green-900">
+                  <SelectTrigger id="branch" className="w-full p-4 border-[var(--nav-border)] rounded-xl bg-[rgba(56,189,248,0.1)] hover:bg-[rgba(56,189,248,0.15)] text-white">
                     <SelectValue placeholder="Select your branch" />
                   </SelectTrigger>
-                  <SelectContent className="bg-white border border-green-300 rounded-xl shadow-lg">
-                    <SelectItem value="CSE" className="p-3 hover:bg-green-50">Computer Science Engineering</SelectItem>
-                    <SelectItem value="ECE" className="p-3 hover:bg-green-50">Electronics and Communication Engineering</SelectItem>
-                    <SelectItem value="ME" className="p-3 hover:bg-green-50">Mechanical Engineering</SelectItem>
-                    <SelectItem value="EEE" className="p-3 hover:bg-green-50">Electrical and Electronics Engineering</SelectItem>
-                    <SelectItem value="CE" className="p-3 hover:bg-green-50">Civil Engineering</SelectItem>
-                    <SelectItem value="AI_DS" className="p-3 hover:bg-green-50">Artificial Intelligence & Data Science</SelectItem>
-                    <SelectItem value="BT" className="p-3 hover:bg-green-50">Biotechnology</SelectItem>
-                    <SelectItem value="CHE" className="p-3 hover:bg-green-50">Chemical Engineering</SelectItem>
-                    <SelectItem value="CSE_AI_ML" className="p-3 hover:bg-green-50">CSE (Artificial Intelligence & Machine Learning)</SelectItem>
-                    <SelectItem value="EIE" className="p-3 hover:bg-green-50">Electronics and Instrumentation Engineering</SelectItem>
-                    <SelectItem value="ETE" className="p-3 hover:bg-green-50">Electronics & Telecommunication Engineering</SelectItem>
-                    <SelectItem value="IEM" className="p-3 hover:bg-green-50">Industrial Engineering and Management</SelectItem>
-                    <SelectItem value="ISE" className="p-3 hover:bg-green-50">Information Science and Engineering</SelectItem>
+                  <SelectContent className="bg-[var(--nav-bg)] border border-[var(--nav-border)] rounded-xl shadow-lg">
+                    {["CSE", "ECE", "ME", "EEE", "CE", "AI_DS", "BT", "CHE", "CSE_AI_ML", "EIE", "ETE", "IEM", "ISE"].map((branch) => (
+                      <SelectItem 
+                        key={branch} 
+                        value={branch} 
+                        className="p-3 text-white hover:bg-[rgba(56,189,248,0.2)] transition-colors duration-200"
+                      >
+                        {branch.replace('_', ' ')}
+                      </SelectItem>
+                    ))}
                   </SelectContent>
                 </Select>
               </div>
@@ -149,7 +99,7 @@ export default function Registration() {
             <div className="flex justify-center items-center">
               <Button 
                 type="submit" 
-                className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-green-500 to-blue-500 rounded-full shadow-lg hover:from-green-600 hover:to-blue-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-green-300"
+                className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-[var(--workshop-gradient-from)] to-[var(--workshop-gradient-to)] rounded-full button-glow transition-all duration-300 transform hover:-translate-y-1"
               >
                 Register
               </Button>

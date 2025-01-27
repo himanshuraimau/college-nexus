@@ -22,15 +22,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    
-      <html lang="en">  
-        <body className="bg-gradient-to-b from-green-100 to-transparent"> 
-          <Navbar/>
-          {children}
-          <Analytics/>
-          <SpeedInsights/>
-        </body>
-      </html>
-    
-  );
+    <html lang="en">  
+      <body className="bg-[var(--hero-gradient-from)]"> 
+        <Navbar/>
+        {children}
+        <Analytics/>
+        <SpeedInsights/>
+      </body>
+    </html>
+  )
 }

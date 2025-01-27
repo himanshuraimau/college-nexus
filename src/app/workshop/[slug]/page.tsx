@@ -34,9 +34,9 @@ const ResourceList: FC<{ title: string; icon: React.ElementType; resources: Reso
     animate={{ opacity: 1, y: 0 }}
     className="space-y-4"
   >
-    <h3 className="flex items-center space-x-3 font-semibold text-green-700 text-lg">
-      <div className="p-2 rounded-lg bg-green-50">
-        <Icon className="w-6 h-6" />
+    <h3 className="flex items-center space-x-3 font-semibold text-white text-glow text-lg">
+      <div className="p-2 rounded-lg bg-[rgba(56,189,248,0.1)]">
+        <Icon className="w-6 h-6 text-[var(--nav-hover)]" />
       </div>
       <span>{title}</span>
     </h3>
@@ -52,10 +52,10 @@ const ResourceList: FC<{ title: string; icon: React.ElementType; resources: Reso
             href={resource.url} 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="group flex items-center justify-between w-full p-4 rounded-xl bg-gradient-to-r from-green-50 to-blue-50 hover:from-green-100 hover:to-blue-100 text-green-800 transition-all duration-300 shadow-sm hover:shadow-lg"
+            className="group flex items-center justify-between w-full p-4 rounded-xl bg-[var(--nav-bg)]/80 hover:bg-[var(--nav-bg)] text-white text-glow transition-all duration-300 border border-[var(--nav-border)] button-glow"
           >
             <span className="font-medium">{resource.title}</span>
-            <ExternalLink className="w-5 h-5 text-green-600 transform transition-transform group-hover:rotate-12" />
+            <ExternalLink className="w-5 h-5 text-blue-600 transform transition-transform group-hover:rotate-12" />
           </Link>
         </motion.li>
       ))}
@@ -91,38 +91,28 @@ const SingleTopicResources: FC<PageProps> = ({ params }) => {
   }
 
   return (
-    <div className="min-h-screen py-16 ">
+    <div className="min-h-screen py-16 bg-[var(--bg)]">
       <div className="container mx-auto px-4 max-w-4xl">
-        <motion.div
-          initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-center mb-16"
-        >
-          <h1 className="text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-blue-600 mb-4">
-            {topic.topic}
-          </h1>
-          <div className="h-1 w-32 mx-auto bg-gradient-to-r from-green-500 to-blue-500 rounded-full" />
-        </motion.div>
-
+       
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="bg-white/90 backdrop-blur-lg shadow-xl rounded-2xl overflow-hidden border border-green-100">
-            <CardHeader className="bg-gradient-to-r from-green-100 to-blue-100 p-6">
+          <Card className="bg-[var(--card-bg)]/90 backdrop-blur-lg shadow-xl rounded-2xl overflow-hidden border border-[var(--card-border)]">
+            <CardHeader className="bg-gradient-to-r from-[rgba(56,189,248,0.1)] to-[rgba(56,189,248,0.1)] p-6">
               <CardTitle className="flex items-center justify-between">
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 rounded-xl bg-white/80 shadow-sm">
-                    <topic.icon className="w-8 h-8 text-green-600" />
+                  <div className="p-3 rounded-xl bg-[var(--card-bg)]/80 shadow-sm">
+                    <topic.icon className="w-8 h-8 text-[var(--nav-hover)]" />
                   </div>
-                  <span className="text-2xl font-bold text-green-800">
+                  <span className="text-2xl font-bold text-white text-glow">
                     {topic.topic}
                   </span>
                 </div>
-                <div className="p-2 rounded-full bg-white/80">
+                <div className="p-2 rounded-full bg-[var(--card-bg)]/80">
                   {topic.covered ? (
-                    <CheckCircle className="w-8 h-8 text-green-500" />
+                    <CheckCircle className="w-8 h-8 text-blue-500" />
                   ) : (
                     <XCircle className="w-8 h-8 text-red-500" />
                   )}

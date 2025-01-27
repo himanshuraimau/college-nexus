@@ -1,14 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-sans: 'Arsenal+SC', sans-serif;
+  --font-sans: 'Inter', sans-serif;
   --primary: #dca47c;
+  
+  /* Hero section variables - Modern Glow Theme */
+  --hero-gradient-from: #0a0f1a;
+  --hero-gradient-to: #1a1f35;
+  --hero-glow: rgba(56, 189, 248, 0.15);
+  --hero-text-color: #ffffff;
+  
+  /* Navbar variables */
+  --nav-bg: rgba(10, 15, 26, 0.8);
+  --nav-border: rgba(56, 189, 248, 0.2);
+  --nav-text: #ffffff;
+  --nav-hover: #38bdf8;
+  
+  /* Button gradients - Modern Glow Shades */
+  --workshop-gradient-from: #0ea5e9;
+  --workshop-gradient-to: #3b82f6;
+  --resources-gradient-from: #38bdf8;
+  --resources-gradient-to: #818cf8;
+  --news-gradient-from: #6366f1;
+  --news-gradient-to: #4f46e5;
+  --team-gradient-from: #38bdf8;
+  --team-gradient-to: #2563eb;
 }
-
 
 @keyframes blob {
   0% { transform: translate(0px, 0px) scale(1); }
@@ -32,4 +53,21 @@
 }
 .animation-delay-4000 {
   animation-delay: 4s;
+}
+
+/* Add new glow utilities */
+.text-glow {
+  text-shadow: 0 0 20px var(--hero-glow);
+}
+
+.button-glow {
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+
+.button-glow:hover {
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.5);
+}
+
+.icon-glow {
+  filter: drop-shadow(0 0 8px var(--hero-glow));
 }
