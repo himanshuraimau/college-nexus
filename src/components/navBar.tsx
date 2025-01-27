@@ -4,22 +4,22 @@ import * as React from "react"
 import Link from "next/link"
 import { Menu, X } from 'lucide-react'
 import { motion, AnimatePresence } from "framer-motion"
-import { SignInButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs'
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false)
-  const navItems = ["Workshop","AcadBlogs", "Resources", "Team"]
+  const navItems = ["Workshop", "AcadBlogs", "Resources", "Team"]
 
   return (
     <div className="relative">
       <div className="absolute top-0 left-0 w-full h-28" />
-      
+
       <div className="relative">
         <div className="container mx-auto pt-4">
           <nav className="bg-white/70 backdrop-blur-sm rounded-full border border-green-200/30 shadow-lg px-8 py-3">
             <div className="flex items-center justify-between">
-              <Link 
-                href="/" 
+              <Link
+                href="/"
                 className="text-lg font-bold relative group"
               >
                 <span className="bg-gradient-to-r from-green-700 to-blue-600 bg-clip-text text-transparent">
@@ -41,15 +41,6 @@ const Navbar = () => {
                 ))}
               </div>
 
-              <div className="hidden md:flex items-center space-x-4">
-                <SignedOut>
-                  <SignInButton>
-                  </SignInButton>
-                </SignedOut>
-                <SignedIn>
-                  <UserButton />
-                </SignedIn>
-              </div>
 
               <button
                 className="md:hidden text-green-700 focus:outline-none"
@@ -88,12 +79,6 @@ const Navbar = () => {
                   </Link>
                 </motion.div>
               ))}
-              <SignedOut>
-                <SignInButton/>
-              </SignedOut>
-              <SignedIn>
-                <UserButton />
-              </SignedIn>
             </div>
           </motion.div>
         )}
