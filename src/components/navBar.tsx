@@ -17,9 +17,9 @@ const Navbar = () => {
           <div className="flex items-center gap-12">
             <Link
               href="/"
-              className="text-xl font-semibold relative group"
+              className="text-2xl pt-1 font-semibold relative group"
             >
-              <span className="text-white text-glow bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
+              <span className="text-white pl-2 text-glow bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
                 CollegeNexus
               </span>
               <span className="absolute -bottom-1 left-0 w-full h-[2px] bg-gradient-to-r from-blue-500 to-purple-500 transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />

@@ -61,7 +61,7 @@ export default function Team() {
                     {member.skills.map((skill, skillIndex) => (
                       <Badge 
                         key={skillIndex} 
-                        className="bg-[var(--nav-hover)]/10 hover:bg-[var(--nav-hover)]/20 text-white text-glow transition-colors duration-300"
+                        className="bg-[var(--nav-hover)]/10 hover:bg-[var(--nav-hover)]/20 text-white border border-[var(--nav-hover)]/20 hover:border-[var(--nav-hover)]/40 transition-all duration-300"
                       >
                         {skill}
                       </Badge>
