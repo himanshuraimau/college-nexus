@@ -42,7 +42,7 @@ const FilteredSubjects: React.FC<{ subjects: Subject[] }> = ({ subjects }) => {
             <motion.button 
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="mb-8 px-6 py-3 bg-gradient-to-r from-[var(--workshop-gradient-from)] to-[var(--workshop-gradient-to)] text-white rounded-full button-glow transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[var(--nav-hover)]"
+                className="mb-8 px-6 py-3 bg-gradient-to-r from-[var(--resources-gradient-from)] to-[var(--resources-gradient-to)] text-white rounded-full button-glow transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[var(--resources-gradient-from)]"
                 onClick={handleBackToResources}
             >
                 Back to Resources
@@ -61,29 +61,29 @@ const FilteredSubjects: React.FC<{ subjects: Subject[] }> = ({ subjects }) => {
                                 transition={{ delay: idx * 0.1 }}
                             >
                                 <Card 
-                                    className="group relative bg-white/80 backdrop-blur-sm hover:shadow-xl transition-all duration-300 overflow-hidden rounded-xl cursor-pointer"
+                                    className="group relative bg-[var(--nav-bg)] backdrop-blur-md border border-[var(--nav-border)] hover:shadow-xl transition-all duration-300 overflow-hidden rounded-xl cursor-pointer"
                                     onClick={() => handleSubjectClick(subject)}
                                 >
-                                    <div className="absolute inset-0 bg-gradient-to-b from-green-50/50 to-blue-50/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <div className="absolute inset-0 bg-gradient-to-b from-[var(--nav-hover)]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                     <div className="relative p-6">
-                                        <h3 className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-600 to-teal-600 mb-2">
+                                        <h3 className="text-xl font-bold text-white mb-2">
                                             {subject.subject}
                                         </h3>
-                                        <div className="flex items-center text-green-700 mb-1">
+                                        <div className="flex items-center text-white/90 mb-1">
                                             <GraduationCap className="w-4 h-4 mr-2" />
                                             <p className="text-sm">{subject.branch}</p>
                                         </div>
-                                        <div className="flex items-center text-green-700 mb-1">
+                                        <div className="flex items-center text-white/90 mb-1">
                                             <Calendar className="w-4 h-4 mr-2" />
                                             <p className="text-sm">Year: {subject.year}, Semester: {subject.semester}</p>
                                         </div>
                                         <div className="mt-4">
-                                            <h4 className="text-sm font-semibold text-green-800 mb-2">Available Resources:</h4>
+                                            <h4 className="text-sm font-semibold text-white mb-2">Available Resources:</h4>
                                             <div className="flex flex-wrap gap-2">
                                                 {Object.keys(subject.resources).map((resourceType, idx) => (
                                                     <Badge 
                                                         key={idx}
-                                                        className="bg-gradient-to-r from-green-100 to-blue-100 hover:from-green-200 hover:to-blue-200 text-green-800 transition-colors duration-300"
+                                                        className="bg-gradient-to-r from-[var(--resources-gradient-from)]/10 to-[var(--resources-gradient-to)]/10 hover:from-[var(--resources-gradient-from)]/20 hover:to-[var(--resources-gradient-to)]/20 text-[var(--resources-gradient-from)] transition-colors duration-300"
                                                     >
                                                         {resourceType.replace('_', ' ')}
                                                     </Badge>
@@ -91,7 +91,7 @@ const FilteredSubjects: React.FC<{ subjects: Subject[] }> = ({ subjects }) => {
                                             </div>
                                         </div>
                                         <button
-                                            className="mt-6 w-full py-2 px-4 bg-gradient-to-r from-green-500 to-teal-500 text-white rounded-full hover:from-green-600 hover:to-teal-600 transition-colors duration-300 flex items-center justify-center"
+                                            className="mt-6 w-full py-2 px-4 bg-gradient-to-r from-[var(--resources-gradient-from)] to-[var(--resources-gradient-to)] text-white rounded-full hover:from-[var(--resources-gradient-from)] hover:to-[var(--resources-gradient-to)] transition-colors duration-300 flex items-center justify-center"
                                         >
                                             <Folder className="w-4 h-4 mr-2" />
                                             View Resources

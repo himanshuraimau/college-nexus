@@ -4,6 +4,7 @@ import "./globals.css";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import Navbar from "@/components/navBar";
+import { BackgroundLayout } from "@/components/BackgroundLayout";
 
 
 export const metadata: Metadata = {
@@ -23,11 +24,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">  
-      <body className="bg-[var(--hero-gradient-from)]"> 
-        <Navbar/>
-        {children}
-        <Analytics/>
-        <SpeedInsights/>
+      <body>
+        <BackgroundLayout>
+          <Navbar/>
+          {children}
+          <Analytics/>
+          <SpeedInsights/>
+        </BackgroundLayout>
       </body>
     </html>
   )

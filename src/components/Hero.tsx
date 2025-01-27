@@ -3,15 +3,25 @@
 import { useRouter } from "next/navigation"
 import { Leaf, Cloud, Newspaper, Users } from "lucide-react"
 import { motion } from "framer-motion"
+import React from "react"
 
 import { Button } from "@/components/ui/button"
+
+export const GridBackgroundDemo = () => {
+  return (
+    <div className="absolute inset-0 bg-[var(--hero-gradient-from)] bg-grid-white/[0.2]">
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-[var(--hero-gradient-from)] [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+    </div>
+  )
+}
 
 const NatureHeroSection = () => {
   const router = useRouter()
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[var(--hero-gradient-from)] to-[var(--hero-gradient-to)] flex items-center justify-center overflow-hidden relative">
-      <div className="absolute inset-0 opacity-[0.03]"></div>
+    <div className="min-h-screen flex items-center justify-center overflow-hidden relative">
+      <GridBackgroundDemo />
+      <div className=" absolute inset-0 opacity-[0.03]"></div>
       
       <div className="container mx-auto px-4 relative z-10">
         <motion.div 

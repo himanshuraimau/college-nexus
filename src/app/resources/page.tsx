@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { motion } from "framer-motion"
 import SelectForm from '../../components/SelectForm'
 import { fetchSubjects } from '../../lib/fetchSubjects'
+import { GridBackgroundDemo } from '@/components/Hero'
 
 interface Subject {
     year: number
@@ -39,7 +40,8 @@ const ResourcePage: React.FC = () => {
     }
 
     return (
-        <div className="min-h-screen pt-8 relative overflow-hidden bg-[var(--hero-gradient-from)]">
+        <div className="min-h-screen pt-8 relative overflow-hidden ">
+            
             <div className="absolute inset-0 bg-[url('/leaves.svg')] opacity-5"></div>
             <div className="absolute top-20 left-10 w-64 h-64 bg-blue-400/20 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
             <div className="absolute top-40 right-10 w-64 h-64 bg-blue-500/20 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>

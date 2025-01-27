@@ -19,8 +19,9 @@ const WorkshopSection = () => {
   const router = useRouter();
 
   return (
-    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden relative bg-[var(--hero-gradient-from)]">
+    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden relative ">
       {/* Background elements */}
+     
       <div className="absolute inset-0 bg-[url('/leaves.svg')] opacity-[0.03]"></div>
       <div className="absolute top-20 left-10 w-64 h-64 bg-[var(--nav-hover)]/20 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
       <div className="absolute top-40 right-10 w-64 h-64 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
@@ -120,7 +121,7 @@ const WorkshopSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
-            className="w-full max-w-6xl mx-auto"
+            className="w-full max-w-6xl mx-auto bg-[var(--hero-gradient-from)]"
           >
             <div className="bg-[var(--nav-bg)]/90 backdrop-blur-md p-8 rounded-2xl border border-[var(--nav-border)] shadow-xl">
               <h2 className="text-2xl font-bold text-white text-glow mb-6 flex items-center gap-3 border-b border-[var(--nav-border)] pb-4">

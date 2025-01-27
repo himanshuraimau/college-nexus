@@ -30,7 +30,7 @@ const SubjectCard: React.FC<{ subject: Subject; onBack: () => void }> = ({ subje
                 <div className="flex flex-col sm:flex-row items-center justify-between mb-6 sm:mb-12">
                     <button
                         onClick={onBack}
-                        className="mb-4 sm:mb-0 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-green-500 to-teal-500 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-green-400 flex items-center text-sm sm:text-base"
+                        className="mb-4 sm:mb-0 px-4 sm:px-6 py-2 sm:py-3 bg-gradient-to-r from-[var(--resources-gradient-from)] to-[var(--resources-gradient-to)] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-[var(--resources-gradient-from)] flex items-center text-sm sm:text-base"
                     >
                         <ArrowLeft className="w-4 h-4 mr-2" />
                         Back
@@ -41,7 +41,7 @@ const SubjectCard: React.FC<{ subject: Subject; onBack: () => void }> = ({ subje
                     <div className="hidden sm:block w-32"></div>
                 </div>
                 
-                <div className="flex flex-wrap justify-center gap-4 mb-6 sm:mb-12">
+                <div className="flex flex-wrap justify-center gap-4 mb-6 sm:mb-12 text-white">
                     <InfoBadge icon={<Calendar className="w-4 h-4 sm:w-5 sm:h-5" />} label="Year" value={subject.year} />
                     <InfoBadge icon={<Book className="w-4 h-4 sm:w-5 sm:h-5" />} label="Semester" value={subject.semester} />
                     <InfoBadge icon={<GraduationCap className="w-4 h-4 sm:w-5 sm:h-5" />} label="Branch" value={subject.branch} />
@@ -65,7 +65,7 @@ const SubjectCard: React.FC<{ subject: Subject; onBack: () => void }> = ({ subje
                                 href={subject.resources.pyqs.final_exam} 
                                 target="_blank" 
                                 rel="noopener noreferrer"
-                                className="text-green-600 hover:text-green-800 hover:underline transition duration-300 flex items-center text-sm sm:text-base"
+                                className="text-[var(--resources-gradient-from)] hover:text-[var(--resources-gradient-to)] hover:underline transition duration-300 flex items-center text-sm sm:text-base"
                             >
                                 <FileText className="w-4 h-4 mr-2" />
                                 Final Exam PYQ
@@ -99,7 +99,7 @@ const ResourceSection: React.FC<{ title: string; items: Record<string, string>; 
                         href={link} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-green-600 hover:text-green-800 hover:underline transition duration-300 flex items-center text-sm sm:text-base"
+                        className="text-[var(--resources-gradient-from)] hover:text-[var(--resources-gradient-to)] hover:underline transition duration-300 flex items-center text-sm sm:text-base"
                     >
                         <FileText className="w-4 h-4 mr-2" />
                         {module}

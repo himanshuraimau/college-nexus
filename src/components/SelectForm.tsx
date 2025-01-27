@@ -75,7 +75,7 @@ const SelectForm: React.FC<SelectFormProps> = ({ onSubmit }) => {
                 <div className='flex justify-center items-center'>
                     <button
                         type="submit"
-                        className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-[var(--workshop-gradient-from)] to-[var(--workshop-gradient-to)] rounded-full button-glow transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-[var(--nav-hover)]"
+                        className="px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-[var(--resources-gradient-from)] to-[var(--resources-gradient-to)] rounded-full button-glow transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-4 focus:ring-[var(--resources-gradient-from)]"
                     >
                         Submit
                     </button>
@@ -98,7 +98,7 @@ const SelectForm: React.FC<SelectFormProps> = ({ onSubmit }) => {
                 select option:hover,
                 select option:focus,
                 select option:active {
-                    background-color: rgba(56,189,248,0.2);
+                    background-color: rgba(var(--hero-text-gradient-from), 0.2);
                 }
                 @media screen and (-webkit-min-device-pixel-ratio:0) {
                     select {
